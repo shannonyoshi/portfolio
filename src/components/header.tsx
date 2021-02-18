@@ -1,4 +1,5 @@
 import React, { FC } from "react";
+import "../"
 
 interface HeaderProps {
   imageBG: string,
@@ -8,10 +9,11 @@ interface HeaderProps {
 }
 
 const Header: FC<HeaderProps> = ({ imageBG, altBG, imageMe, blurb }): JSX.Element => {
+  
   return (
     <header>
-      <img src={imageBG} alt={altBG} />
-      <img src={imageMe} alt="head shot" />
+      <img src={`/assets/${imageBG}`} alt={altBG} />
+      <img src={`/assets/${imageMe}`} alt="head shot" />
       <div className="header-text">
         <h2>Shannon Yoshikawa</h2>
         <h3>Web Dev</h3>
@@ -20,3 +22,5 @@ const Header: FC<HeaderProps> = ({ imageBG, altBG, imageMe, blurb }): JSX.Elemen
     </header>
   )
 }
+
+export default Header;

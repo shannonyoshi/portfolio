@@ -1,14 +1,14 @@
-import React from 'react';
+import React, { FC } from 'react';
 
-function App() {
+import Header from "./components/header"
+
+import Projects from "./components/proj"
+
+const App: FC = () => {
   return (
     <div className="App">
-      <header className="App-header">
-        {/* <img src={logo} className="App-logo" alt="logo" /> */}
-        <p>
-          I edited!!
-        </p>
-      </header>
+      <Header imageBG="seattle(eric-zhang)crop.jpg" altBG="Seattle Skyline" imageMe="../assets/ProfessionalPortrait.JPG" blurb="Hello!" />
+      <Projects />
     </div>
   );
 }
