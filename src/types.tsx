@@ -26,3 +26,5 @@ export interface EduInter{
   field: string,
   subfield?: string,
 }
+
+export type PageOpts = "portfolio" | "resume" | "about"

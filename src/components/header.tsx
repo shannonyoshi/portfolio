@@ -15,12 +15,21 @@ const Header: FC<HeaderProps> = ({ imageBG, altBG, imageMe, blurb }): JSX.Elemen
       <div className="bg-container">
         <img src={`/assets/${imageBG}`} alt={altBG} className="bg" />
       </div>
-      <div className="portrait-container">
+      <div className="portrait-info-container">
+
+      {/* <div className="portrait-container"> */}
         <img src={`/assets/${imageMe}`} alt="head shot" className="portrait" />
+      {/* </div> */}
 
         <div className="header-text">
-          <h2>Shannon Yoshikawa</h2>
-          <h3>Full Stack Web Developer</h3>
+          <div className="wrap-text dark">
+
+          <h1>Shannon  &nbsp;</h1><h1 className="indented">Yoshikawa</h1>
+          </div>
+          <div className="wrap-text">
+
+          <h1 className="indented">Full Stack  &nbsp;</h1><h1>Web Developer</h1>
+          </div>
           {/* <p>{blurb}</p> */}
         </div>
       </div>

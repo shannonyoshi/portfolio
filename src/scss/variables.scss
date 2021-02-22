@@ -1,17 +1,50 @@
+// Colors
+
+
 $colors: (
   dark: #8f5d5c,
   medium: #ef9a73,
   light: #fec672,
-  light-grey: #A1A1A6,
+  light-grey: #a1a1a6,
   grey: #43434d,
   darker-grey: #35353d,
-  dark-grey:#28282e,
+  dark-grey: #28282e,
   contrast: #153243,
-  contrast-l: #5B85AA,
+  contrast-l: #5b85aa,
   bg: #fefbf7,
   white: white,
 );
 
 @function color($color-name) {
   @return map-get($colors, $color-name);
+}
+
+// Media Queries
+$phone-width: 480px;
+$tablet-width: 768px;
+$small-screen-width: 1024px;
+$desktop-width: 1200px;
+
+
+
+@mixin phone {
+  @media (max-width: #{$phone-width}) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (max-width: #{$tablet-width}) {
+    @content;
+  }
+}
+@mixin small-screen {
+  @media (max-width: #{$small-screen-width}) {
+    @content;
+  }
+}
+@mixin desktop {
+  @media (max-width: #{$desktop}) {
+    @content;
+  }
 }

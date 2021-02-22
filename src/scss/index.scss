@@ -134,29 +134,71 @@ img {
 h1,
 h2,
 h3 {
-  color: color(medium);
+  color: color(contrast-l);
+  font-weight:bold;
 }
 h1 {
   font-size: 2em;
+  @include small-screen{
+    font-size:1.8em;
+  }
+  @include tablet{
+    font-size:1.6em
+  }
+  @include phone{
+    font-size:1.4em
+  }
 }
 h2 {
   font-size: 1.8em;
+  @include small-screen{
+    font-size:1.6em;
+  }
+  @include tablet{
+    font-size:1.4em
+  }
+  @include phone{
+    font-size:1.2em
+  }
 }
 h3 {
   font-size: 1.6em;
+  @include small-screen{
+    font-size:1.4em;
+  }
+  @include tablet{
+    font-size:1.2em
+  }
+  @include phone{
+    font-size:1.1em
+  }
 }
 h4 {
   font-size: 1.4em;
+  @include small-screen{
+    font-size:1.2em;
+  }
+  @include tablet{
+    font-size:1.1em
+  }
+
 }
 h5 {
   font-size: 1.2em;
+  @include small-screen{
+    font-size:1.1em;
+  }
 }
 
 h4,
 h5,
 h6 {
-  color: color(light);
+  color: color(contrast);
+  font-weight:bolder;
 }
 p {
   color: color(grey);
+}
+.label{
+  font-weight:bold;
 }

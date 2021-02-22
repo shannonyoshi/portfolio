@@ -1,14 +1,19 @@
-import React from "react";
+import React, { FC, SetStateAction, Dispatch } from "react";
 
-const Navigation = () => {
-return (
-  <nav>
-    <a href="#">Portfolio</a>
-    <a href="#">Experience</a>
-    <a href="#">Resume</a>
-    <a href="#">About Me</a>
-  </nav>
-)
+import { PageOpts } from "../types"
+
+interface NavProps {
+  setPage: Dispatch<SetStateAction<PageOpts>>
+}
+
+const Navigation = ({ setPage }: NavProps): JSX.Element => {
+  return (
+    <nav>
+      <button onClick={() => setPage("portfolio")}>Portfolio</button>
+      <button onClick={() => setPage("resume")}>Resume</button>
+      <button onClick={() => setPage("about")}>About Me</button>
+    </nav>
+  )
 }
 
 export default Navigation;
