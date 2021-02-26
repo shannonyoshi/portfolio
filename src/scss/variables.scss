@@ -1,17 +1,19 @@
 // Colors
 
-
 $colors: (
   dark: #8f5d5c,
   medium: #ef9a73,
   light: #fec672,
+  grey-accent: #d9d9db,
   light-grey: #a1a1a6,
   grey: #43434d,
   darker-grey: #35353d,
   dark-grey: #28282e,
-  contrast: #153243,
-  contrast-l: #5b85aa,
+  heading: #153243,
+  heading-l: #1f4861,
+  sub-heading: #5b85aa,
   bg: #fefbf7,
+  grey-white: #F3F3F4,
   white: white,
 );
 
@@ -24,8 +26,6 @@ $phone-width: 480px;
 $tablet-width: 768px;
 $small-screen-width: 1024px;
 $desktop-width: 1200px;
-
-
 
 @mixin phone {
   @media (max-width: #{$phone-width}) {
@@ -44,7 +44,38 @@ $desktop-width: 1200px;
   }
 }
 @mixin desktop {
-  @media (max-width: #{$desktop}) {
+  @media (max-width: #{$desktop-width}) {
     @content;
+  }
+}
+
+@mixin raise {
+  transition: all 0.3s ease;
+  transform: translateY(0) translateZ(0);
+  &:hover,
+  &:focus {
+    transition: all 150ms ease;
+    transform: translateY(-0.2rem) translateZ(0);
+  }
+}
+
+@mixin fade-bg{
+  background-image: linear-gradient(color(white), color(grey-white))
+  // background-image: linear-gradient(color(grey-white), color(white))
+
+}
+
+@mixin page-width{
+  margin:auto;
+  width:80%;
+  max-width:1400px;
+  @include small-screen{
+    width:85%;
+  }
+  @include tablet{
+    width:90%;
+  }
+  @include phone {
+    width:96%;
   }
 }

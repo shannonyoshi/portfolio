@@ -24,11 +24,11 @@ const Header: FC<HeaderProps> = ({ imageBG, altBG, imageMe, blurb }): JSX.Elemen
         <div className="header-text">
           <div className="wrap-text dark">
 
-          <h1>Shannon  &nbsp;</h1><h1 className="indented">Yoshikawa</h1>
+          <h3>Shannon  &nbsp;</h3><h3 className="indented">Yoshikawa</h3>
           </div>
           <div className="wrap-text">
 
-          <h1 className="indented">Full Stack  &nbsp;</h1><h1>Web Developer</h1>
+          <h3 className="indented">Full Stack  &nbsp;</h3><h3>Web Developer</h3>
           </div>
           {/* <p>{blurb}</p> */}
         </div>

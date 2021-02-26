@@ -1,0 +1,44 @@
+@import "variables";
+
+nav {
+  @include page-width;
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  // margin-bottom: 1em;
+  .nav-btn {
+    background-color: color(white);
+    border: none;
+    border-bottom:4px double transparent;
+    outline: none;
+    color: color(light-grey);
+    font-size: 1.5em;
+    // font-weight: bold;
+    margin: 0.5em;
+    @include raise;
+
+    &:hover {
+      border-bottom: 4px double color(light-grey);
+    }
+    &.selected{
+      color: color(grey);
+      border-bottom:4px double color(grey);
+      @include raise;
+    }
+  }
+}
+
+
+
+
+
+.raise {
+  transition: all 150ms ease;
+  transform: translateY(0) translateZ(0);
+}
+
+.raise:hover,
+.raise:focus {
+  transition: all 150ms ease;
+  transform: translateY(-.2rem) translateZ(0);
+}

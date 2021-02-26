@@ -8,6 +8,9 @@ header {
     width: 100%;
     max-height: 310px;
     margin-bottom: 100px;
+    @include tablet {
+      margin-bottom: 75px;
+    }
   }
   .bg {
     object-fit: cover;
@@ -18,39 +21,46 @@ header {
   }
   .portrait-info-container {
     position: absolute;
-    margin-left: -10vw;
-    bottom: -10vw;
+    // margin-left: -10vw;
+    // bottom: -8vw;
+    bottom: -97px;
+    margin-left: -100px;
     left: 50%;
     display: flex;
 
-    @include small-screen {
-      margin-left: -100px;
-      bottom: -100px;
-    }
-    @include tablet{
-      left: 30%;
+    @include tablet {
+      bottom:-72px;
+      // left:50%; 
+      margin-left:0px;
+    transform:translate(-50%, 0); 
+      // left: 33%;
     }
   }
   .portrait {
     float: left;
     background-color: color(white);
     border-radius: 50%;
-    width: 20vw;
+    // width: 15vw;
     height: auto;
     padding: 5px;
     border: 2px solid color(medium);
-    @include small-screen {
-      width: 200px;
+    width: 200px;
+    @include tablet {
+      width:150px;
     }
   }
   .header-text {
+
     margin: auto 10px;
     display: block;
     white-space: nowrap;
     .dark {
-      h1 {
-        color: color(contrast);
+      h3 {
+        color: color(heading);
       }
+    }
+    h3{
+      margin-top:0;
     }
     .wrap-text {
       display: flex;
@@ -66,7 +76,7 @@ header {
     }
     // h2,
     // h3 {
-    //   color: color(contrast);
+    //   color: color(heading);
     //   line-height: 1.25;
     //   // text-align:center;
     // }
