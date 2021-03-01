@@ -1,4 +1,4 @@
-import { ProjInter, ExpInter, EduInter } from "./types";
+import { ProjInter, ExpInter, EduInter, Skill } from "./types";
 
 export const projList: ProjInter[] = [{
   id: 1,
@@ -8,7 +8,7 @@ export const projList: ProjInter[] = [{
   stack: ["React", "Golang"],
   url: "https://bakingunits.com/",
   github: "https://github.com/shannonyoshi/unit-conversion",
-  images: [{src: "baking-units.png", alt: "Baking Units Homepage"}, {src:"baking-units-volume-chart.png", alt:"Baking Units Volume Chart"}, {src:"baking-units-custom-chart.png", alt:"Baking Units custom unit chart"}, {src:"baking-units-suggestion-form.png", alt:"Baking Units Suggestion Form"}]
+  images: [{ src: "baking-units.png", alt: "Baking Units Homepage" }, { src: "baking-units-volume-chart.png", alt: "Baking Units Volume Chart" }, { src: "baking-units-custom-chart.png", alt: "Baking Units custom unit chart" }, { src: "baking-units-suggestion-form.png", alt: "Baking Units Suggestion Form" }]
 }, {
   id: 2,
   name: "Match-Game",
@@ -17,7 +17,7 @@ export const projList: ProjInter[] = [{
   stack: ["React with TypeScript"],
   url: "https://match-game.syoshi.dev/",
   github: "https://github.com/shannonyoshi/match-game",
-  images: [{src: "match-game-instructions-default.png", alt: "Instructions Default Mode"}, {src: "match-game-hint.png", alt: "Match Game Hint Default Mode"}, {src: "match-game-error-dark.png", alt: "Match Game Error Dark Mode"},  {src: "match-game-mono-matches.png", alt: "Match Game Matches Mono Mode"}, {src: "match-game-mono-dark.png", alt: "Match Game Instructions Mono-Dark Mode"},]
+  images: [{ src: "match-game-instructions-default.png", alt: "Instructions Default Mode" }, { src: "match-game-hint.png", alt: "Match Game Hint Default Mode" }, { src: "match-game-error-dark.png", alt: "Match Game Error Dark Mode" }, { src: "match-game-mono-matches.png", alt: "Match Game Matches Mono Mode" }, { src: "match-game-mono-dark.png", alt: "Match Game Instructions Mono-Dark Mode" },]
 }, {
   id: 3,
   name: "Training in the 21st Century Website",
@@ -26,17 +26,18 @@ export const projList: ProjInter[] = [{
   stack: ["Hugo with React admin portal", "Golang"],
   url: "https://www.traininginthe21stcentury.com/",
   github: "https://github.com/shannonyoshi/match-game",
-  images: [{src: "t21c-home.png", alt: "T21C Homepage"},{src: "t21c-home-lower.png", alt: "T21C Homepage:Why use blended learning?"}, {src: "t21c-services.png", alt: "T21C Services Page"}]
+  images: [{ src: "t21c-home.png", alt: "T21C Homepage" }, { src: "t21c-home-lower.png", alt: "T21C Homepage:Why use blended learning?" }, { src: "t21c-services.png", alt: "T21C Services Page" }]
 },
 ]
 
 export const expList: ExpInter[] = [{
   id: 1,
-  role: "string",
-  company: "string",
-  time: "string",
-  text: "string",
-  bullets: ["string"],
+  role: "Facilities Coordinator",
+  company: "Jones Lang LaSalle",
+  location: "San Francisco",
+  time: "November 2017 - March 2019",
+  text: "Beginning as a contractor, and hired on as full-time staff a few months.",
+  bullets: ["Maintained and ran a building with 100-140 employees by coordinating vendors, inventory and ordering of supplies, reorganizing storage system and processing invoices", "Worked to improve employee and client experiences by encouraging interagency mingling, improving amenities, planning and hosting happy hours, and organizing tournaments"],
 }]
 
 export const eduList: EduInter[] = [{
@@ -52,3 +53,13 @@ export const eduList: EduInter[] = [{
   field: "Course: Web Development",
 }]
 
+export const skillsList: Skill[] = [{
+  main: "Golang", sub: ["Hugo"]
+}, {
+  main: "Javascript", sub: ["React", "Node", "Express", "Jest"]
+}, {
+  main: "Python", sub: ["Django"]
+}, {
+  main: "PostgreSQL", sub: [""]
+}
+]

@@ -30,7 +30,6 @@ const Slider: FC<SliderProps> = ({ images }): JSX.Element => {
     <div className="slider-wrapper">
       <img className="slider-img" src={`/assets/${images[index].src}`} alt={`${images[index].alt}`} />
       <div className="btns-wrapper">
-
         <button className="slider-btn" onClick={goLeft}><i className="fas fa-chevron-left icon-btn" /></button>
         <div className="dots">
           {images.map((image, i) => <div onClick={() => setIndex(i)} className={`dot ${index === i ? "selected" : ""}`}></div>)}
