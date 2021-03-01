@@ -8,7 +8,7 @@ export const projList: ProjInter[] = [{
   stack: ["React", "Golang"],
   url: "https://bakingunits.com/",
   github: "https://github.com/shannonyoshi/unit-conversion",
-  image: "baking-units.png"
+  images: [{src: "baking-units.png", alt: "Baking Units Homepage"}, {src:"baking-units-volume-chart.png", alt:"Baking Units Volume Chart"}, {src:"baking-units-custom-chart.png", alt:"Baking Units custom unit chart"}, {src:"baking-units-suggestion-form.png", alt:"Baking Units Suggestion Form"}]
 }, {
   id: 2,
   name: "Match-Game",
@@ -17,16 +17,16 @@ export const projList: ProjInter[] = [{
   stack: ["React with TypeScript"],
   url: "https://match-game.syoshi.dev/",
   github: "https://github.com/shannonyoshi/match-game",
-  image: "baking-units.png"
+  images: [{src: "match-game-instructions-default.png", alt: "Instructions Default Mode"}, {src: "match-game-hint.png", alt: "Match Game Hint Default Mode"}, {src: "match-game-error-dark.png", alt: "Match Game Error Dark Mode"},  {src: "match-game-mono-matches.png", alt: "Match Game Matches Mono Mode"}, {src: "match-game-mono-dark.png", alt: "Match Game Instructions Mono-Dark Mode"},]
 }, {
   id: 3,
   name: "Training in the 21st Century Website",
   role: "Front and Backend Development",
-  description: "Used Netlify CMS to create a company website",
+  description: "Worked with a client to create an updated website for a 3D Training Company using client images, colors, and copy. Netlify CMS ensures the client can add e-learnings, blog posts and update content on demand.",
   stack: ["Hugo with React admin portal", "Golang"],
   url: "https://www.traininginthe21stcentury.com/",
   github: "https://github.com/shannonyoshi/match-game",
-  image: "baking-units.png"
+  images: [{src: "t21c-home.png", alt: "T21C Homepage"},{src: "t21c-home-lower.png", alt: "T21C Homepage:Why use blended learning?"}, {src: "t21c-services.png", alt: "T21C Services Page"}]
 },
 ]
 

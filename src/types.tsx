@@ -6,7 +6,12 @@ export interface ProjInter {
   stack:string[],
   url: string,
   github: string,
-  image: string
+  images: Image[]
+}
+
+export interface Image {
+  src: string,
+  alt: string
 }
 
 export interface ExpInter {

@@ -1,0 +1,49 @@
+@import "variables";
+
+.slider-wrapper {
+  margin-bottom: 2em;
+  .btns-wrapper {
+    margin-top:1em;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .slider-btn {
+    cursor: grab;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    color: color(heading-l);
+    .icon-btn {
+      height: 3em;
+      width: 3em;
+    }
+  }
+  .dots {
+    display: flex;
+    align-items: center;
+  }
+  .dot {
+    height: 0.75em;
+    width: 0.75em;
+
+    margin: 0.5em;
+    border-radius: 50%;
+    background-color: color(sub-heading);
+    cursor: grab;
+  }
+  .selected {
+    height: 1em;
+    width: 1em;
+    background-color: color(heading-l);
+  }
+
+  .slider-img {
+    width: 100%;
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.5);
+    @include small-screen {
+      margin: 2em 0 0 0;
+    }
+  }
+}
