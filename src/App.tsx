@@ -10,8 +10,8 @@ import Resume from "./components/resume"
 
 import { PageOpts } from "./types";
 
-const App: FC = () => {
-  const [page, setPage] = useState<PageOpts>("portfolio")
+const App: FC = () :JSX.Element=> {
+  const [page, setPage] = useState<PageOpts>("resume")
   return (
     <div className="App">
       <Header imageBG="seattle(eric-zhang)crop.jpg" altBG="Seattle Skyline" imageMe="../assets/ProfessionalPortrait.JPG" blurb="Hello!" />

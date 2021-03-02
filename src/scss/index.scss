@@ -134,7 +134,7 @@ img {
 h1,
 h2,
 h3 {
-  margin-top:.25em;
+  margin-top: 0.25em;
   color: color(sub-heading);
   font-weight: bold;
 }
@@ -194,9 +194,9 @@ h4 {
   @include tablet {
     font-size: 1.2em;
   }
-  // @include phone {
-  //   font-size: 1.2em;
-  // }
+  @include phone {
+    font-size: 1.1em;
+  }
 }
 h5 {
   font-size: 1.6em;
@@ -206,12 +206,9 @@ h5 {
   @include small-screen {
     font-size: 1.2em;
   }
-  // @include tablet {
-  //   font-size: 1.2em;
-  // }
-  // @include phone{
-  //   font-size:1.2em
-  // }
+  @include tablet {
+    font-size: 1.1em;
+  }
 }
 
 h4,
@@ -219,16 +216,11 @@ h5,
 h6 {
   color: color(heading-l);
   font-weight: bolder;
-  margin-top:.25em;
+  margin-top: 0.25em;
 }
 p {
-  font-size: 1.2em;
-  line-height: 1.25;
-  // max-width: 80ch;
   color: color(grey);
-  @include phone{
-    font-size:1em;
-  }
+  @include small-text;
 }
 .label {
   font-weight: bold;

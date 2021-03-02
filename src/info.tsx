@@ -60,6 +60,6 @@ export const skillsList: Skill[] = [{
 }, {
   main: "Python", sub: ["Django"]
 }, {
-  main: "PostgreSQL", sub: [""]
+  main: "PostgreSQL", sub: []
 }
 ]

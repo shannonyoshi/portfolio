@@ -11,7 +11,7 @@ const Projects: FC = (): JSX.Element => {
   return (
     <section>
       {/* <h2>Projects</h2> */}
-      {projList.map((proj, index) => <div key={`proj:${proj.id}`}>
+      {projList.map(proj => <div key={`proj:${proj.id}`}>
 
         <Project project={proj} />
       </div>

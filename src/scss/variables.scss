@@ -62,7 +62,17 @@ $desktop-width: 1200px;
 @mixin fade-bg{
   background-image: linear-gradient(color(white), color(grey-white))
   // background-image: linear-gradient(color(grey-white), color(white))
+}
 
+@mixin small-text{
+  font-size: 1.2em;
+  line-height: 1.25;
+  @include tablet{
+    font-size:1.1em;
+  }
+  @include phone{
+    font-size:1em;
+  }
 }
 
 @mixin page-width{

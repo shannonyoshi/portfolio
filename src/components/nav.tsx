@@ -9,7 +9,7 @@ interface NavProps {
   page: PageOpts,
 }
 
-const Navigation = ({ setPage, page }: NavProps): JSX.Element => {
+const Navigation:FC<NavProps> = ({ setPage, page }): JSX.Element => {
   return (
     <nav>
       <button className={`nav-btn raise ${page==="portfolio"? "selected": ""}`} onClick={() => setPage("portfolio")}>Portfolio</button>

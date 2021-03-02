@@ -1,0 +1,34 @@
+@import "variables";
+
+.resume-wrapper {
+
+  .skills-wrapper {
+    padding: 3%;
+    width: auto;
+    border: 1px solid red;
+    .skills-heading{
+      color:color(heading-l)
+    }
+    ul {
+      list-style-type: none;
+    }
+    .main-item {
+      margin-top: 5px;
+      color:color(grey);
+      @include small-text;
+      font-weight: 550;
+    }
+    .sub-list {
+      text-indent: 1em;
+      font-weight:400;
+    }
+  }
+  .exp-wrapper{
+
+    .exp-item{
+      list-style-type: disc;
+      display: list-item;
+      margin-left:1em;
+    }
+  }
+}
