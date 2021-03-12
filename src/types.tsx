@@ -37,4 +37,11 @@ export interface Skill {
   sub: string[]
 }
 
+export interface HobbyInter {
+  id: number,
+  name: string,
+  description: string,
+  images: Image[]
+}
+  
 export type PageOpts = "portfolio" | "resume" | "about"
