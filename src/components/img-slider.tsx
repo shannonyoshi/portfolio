@@ -4,12 +4,15 @@ import { Image } from "../types"
 import "../scss/img-slider.scss"
 
 interface SliderProps {
-  images: Image[]
+  images: Image[],
+  directory?: string,
+  small?: boolean,
 }
 
-const Slider: FC<SliderProps> = ({ images }): JSX.Element => {
+const Slider: FC<SliderProps> = ({ images, directory = null, small = false }): JSX.Element => {
   const [index, setIndex] = useState<number>(0)
-
+  console.log("directory: ", directory)
+  console.log('src: ', `/assets/${directory ? `${directory}/` : ``}${images[index].src}`)
   const goLeft = (): void => {
     if (index === 0) {
       setIndex(images.length - 1)
@@ -28,8 +31,8 @@ const Slider: FC<SliderProps> = ({ images }): JSX.Element => {
 
   return (
     <div className="slider-wrapper">
-      <img className="slider-img" src={`/assets/${images[index].src}`} alt={`${images[index].alt}`} />
-      <div className="btns-wrapper">
+      <img className={`slider-img${small ? "-small" : ""}`} src={`/assets/${directory ? `${directory}/` : ``}${images[index].src}`} alt={`${images[index].alt}`} />
+      <div className={`btns-wrapper${small?"-small":""}`}>
         <button className="slider-btn" onClick={goLeft}><i className="fas fa-chevron-left icon-btn" /></button>
         <div className="dots">
           {images.map((image, i) => <div onClick={() => setIndex(i)} className={`dot ${index === i ? "selected" : ""}`}></div>)}

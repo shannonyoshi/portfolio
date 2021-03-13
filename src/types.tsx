@@ -41,7 +41,8 @@ export interface HobbyInter {
   id: number,
   name: string,
   description: string,
-  images: Image[]
+  images: Image[],
+  directory?:string
 }
   
 export type PageOpts = "portfolio" | "resume" | "about"

@@ -69,36 +69,43 @@ export const hobbyProjs: HobbyInter[] = [
     id: 1,
     name: "Carved Steel Leaf",
     description: 'This wall-mounted leaf is carved from mild steel with welded mounting brackets. First, cut from a 1/2" sheet of steel using a plasma cutter. Followed by many hours of grinding with an angle grinder.(After finishing the grinding on this project, I promised myself that I would never grind steel like this again--softer metals only.) Then several hours of sanding, before welding on the mounting brackets. I finished the piece off with patina and a clear coat to prevent rust.',
-    images: [{ src: "leaf-patina.jpg", alt: "Leaf after application of patina" }, { src: "leaf-polishing.jpg", alt: "Leaf after polishing" }, { src: "leaf-grinding.jpg", alt: "Leaf after grinding" }, { src: "leaf-start.jpg", alt: "Partially ground leaf" }]
+    images: [{ src: "leaf-patina.jpg", alt: "Leaf after application of patina" }, { src: "leaf-polishing.jpg", alt: "Leaf after polishing" }, { src: "leaf-grinding.jpg", alt: "Leaf after grinding" }, { src: "leaf-start.jpg", alt: "Partially ground leaf" }],
+    directory:"leaf"
   },
   {
     id: 2,
     name: "Blue Alhambra Purse",
     description: "The brass design was inspired by the Alhambra Palace in Grenada, Spain. This was my first time combining metal and leather and my first self-drafted leather pattern.",
-    images: [{ src: "blue-finished-front.jpg", alt: "Finished Blue Purse" }, { src: "blue-finished-corner.jpg", alt: "Angled Finished Blue Purse" }, { src: "blue-side-pieces.jpg", alt: "Unfinished sides" }, { src: "blue-sides.jpg", alt: "Finished sides" }]
-  },
+    images: [{ src: "blue-finished-front.jpg", alt: "Finished Blue Purse" }, { src: "blue-finished-corner.jpg", alt: "Angled Finished Blue Purse" }, { src: "blue-side-pieces.jpg", alt: "Unfinished sides" }, { src: "blue-sides.jpg", alt: "Finished sides" }],
+    directory:"blue-purse"
+  }
+  ,
   {
     id: 3,
     name: "Purple Kojitsugani and Sakura Purse",
     description: "My second self-drafted pattern, borrowing inspiration from my Japanese heritage. In this project I explored a new method of attaching metal to leather using prongs.",
-    images: [{ src: "purple-metal-1.jpg", alt: "Metal cutting progress pic" }, { src: "purple-metal-2.jpg", alt: "Finished metal cutting and filing" }, { src: "purple-shaping", alt: "Shaping the leather around a form" }]
+    images: [{ src: "purple-metal-1.jpg", alt: "Metal cutting progress pic" }, { src: "purple-metal-2.jpg", alt: "Finished metal cutting and filing" }, { src: "purple-shaping", alt: "Shaping the leather around a form" }],
+    directory:"small-purple-pure"
   },
   {
     id: 4,
     name: "Art-Deco Purple Purse",
     description: "Worked with a client to create an updated website for a 3D Training Company using client images, colors, and copy. Netlify CMS ensures the client can add e-learnings, blog posts and update content on demand.",
-    images: [{ src: "t21c-home.png", alt: "" }, { src: "t21c-home.png", alt: "" },]
+    images: [{ src: "t21c-home.png", alt: "" }, { src: "t21c-home.png", alt: "" },],
+    directory:"round-purple-purse"
   },
   {
     id: 5,
     name: "Married Metal Projects",
     description: "Married metal is a process to cut and solder pieces together into a patterned flat sheet of metal. These are a functional box clasp, closing storage tubes. I lost studio access before being able to finish the paisley tube, but I look forward to finishing it when I have access to the required equipment",
-    images: [{ src: "married-metal.jpg", alt: "Married metal box clasp, and tubes" }, { src: "mm-paisley-1.jpg", alt: "First pieces cut" }, { src: "mm-paisley-2.jpg", alt: "Most pieces cut" }, { src: "mm-paisley-3.jpg", alt: "All pieces cut and fit into place" }]
+    images: [{ src: "married-metal.jpg", alt: "Married metal box clasp, and tubes" }, { src: "mm-paisley-1.jpg", alt: "First pieces cut" }, { src: "mm-paisley-2.jpg", alt: "Most pieces cut" }, { src: "mm-paisley-3.jpg", alt: "All pieces cut and fit into place" }],
+    directory:"married-metal"
   },
   {
     id: 6,
     name: "Wallets",
     description: "So far I have made 3 bifold wallets. It's gratifying to see so much improvement. I've enjoyed coming up with new card slot patterns.",
-    images: [{ src: "wallet1-partially-sewed.jpg", alt: "Partially sewed wallet" }, { src: "wallet1-pieces.jpg", alt: "Assembled pieces of the wallet" }, { src: "wallet2-partially-sewed.jpg", alt: "Partially sewed wallet" }, { src: "wallet2-pieces-stacked", alt: "Assembled pieces of the wallet" }, { src: "wallet2-pieces-separated.jpg", alt: "Separated card slot pieces" }]
+    images: [{ src: "wallet1-partially-sewed.jpg", alt: "Partially sewed wallet" }, { src: "wallet1-pieces.jpg", alt: "Assembled pieces of the wallet" }, { src: "wallet2-partially-sewed.jpg", alt: "Partially sewed wallet" }, { src: "wallet2-pieces-stacked", alt: "Assembled pieces of the wallet" }, { src: "wallet2-pieces-separated.jpg", alt: "Separated card slot pieces" }],
+    directory:"wallets"
   }
 ]

@@ -1,0 +1,15 @@
+@import "variables";
+
+.page-about {
+  @include page-width;
+  
+    // .hobby-slider {
+    //   img{
+
+    //     object-fit:scale-down;
+    //   }
+    //   max-width: 1000px;
+    //   max-height: 750px;
+    // }
+  
+}
