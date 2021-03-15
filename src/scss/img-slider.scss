@@ -1,8 +1,9 @@
 @import "variables";
 
 .slider-wrapper {
-  margin-bottom: 2em;
-  margin:0 auto;
+  // margin-bottom: 2em;
+  // margin:0 auto 2em auto;
+  text-align: center;
   .btns-wrapper {
     margin-top: 1em;
     display: flex;
@@ -11,11 +12,12 @@
     align-items: center;
   }
   .btns-wrapper-small {
-    margin-top: 1em;
+    margin: 1em auto 0 auto;
     display: flex;
-    width: 500px;
+    max-width: 500px;
+    width:auto;
     justify-content: space-between;
-    align-items: center;
+    text-align: center;
   }
   .slider-btn {
     cursor: grab;
@@ -57,6 +59,7 @@
   }
   .slider-img-small {
     object-fit: scale-down;
+    max-width:100%;
     width: 500px;
     height: 500px;
   }

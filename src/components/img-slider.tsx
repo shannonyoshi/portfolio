@@ -35,7 +35,7 @@ const Slider: FC<SliderProps> = ({ images, directory = null, small = false }): J
       <div className={`btns-wrapper${small?"-small":""}`}>
         <button className="slider-btn" onClick={goLeft}><i className="fas fa-chevron-left icon-btn" /></button>
         <div className="dots">
-          {images.map((image, i) => <div onClick={() => setIndex(i)} className={`dot ${index === i ? "selected" : ""}`}></div>)}
+          {images.map((image, i) => <div onClick={() => setIndex(i)} className={`dot ${index === i ? "selected" : ""}`} key={`dot-${i}`}></div>)}
         </div>
         <button className="slider-btn" onClick={goRight}><i className="fas fa-chevron-right icon-btn" /></button>
       </div>

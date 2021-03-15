@@ -1,15 +1,32 @@
 @import "variables";
 
 .page-about {
-  @include page-width;
-  
-    // .hobby-slider {
-    //   img{
+  width: 100%;
+  .top {
+    @include page-width;
+  }
 
-    //     object-fit:scale-down;
-    //   }
-    //   max-width: 1000px;
-    //   max-height: 750px;
-    // }
-  
+  .hobby-wrapper {
+    @include fade-bg;
+    padding: 1em 0;
+    @include small-screen {
+      padding: 0.5em 0;
+    }
+  }
+  .content {
+    @include page-width;
+
+    p,
+    h4 {
+      max-width: 100%;
+      width: 700px;
+      margin: auto;
+    }
+  }
+  .info {
+    padding: 1em 0;
+    @include small-screen {
+      padding: 0.5em 0;
+    }
+  }
 }

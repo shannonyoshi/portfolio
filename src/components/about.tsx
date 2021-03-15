@@ -9,9 +9,12 @@ import "../scss/about.scss";
 const About: FC = (): JSX.Element => {
   return (
     <div className="page-about">
-      <h3>Hobbies</h3>
+      <div className="top">
 
-      <p>I'm not really sure what to say here, so I'll just share some of my hobbies and projects.</p>
+        <h3>Hobbies</h3>
+
+        <p>I'm not really sure what to say here, so I'll just share some of my hobbies and projects.</p>
+      </div>
 
       {hobbyProjs.map(proj => <Hobby hobby={proj} key={`hobby-${proj.id}`} />)}
 
@@ -26,15 +29,17 @@ type HobbyProps = {
 const Hobby: FC<HobbyProps> = ({ hobby }): JSX.Element => {
   return (
     <div className="hobby-wrapper">
-      <h4>{hobby.name}</h4>
+      <div className="content">
+        <div className="info">
+          <h4>{hobby.name}</h4>
 
-      <p>{hobby.description}</p>
-      <div className="hobby-slider">
-
-      <Slider images={hobby.images} directory={hobby.directory} small={true}/>
-      </div>
-
-    </div>
+          <p>{hobby.description}</p>
+        </div>
+        <div className="hobby-slider">
+          <Slider images={hobby.images} directory={hobby.directory} small={true} />
+        </div>
+      </div >
+    </div >
   )
 }
 
