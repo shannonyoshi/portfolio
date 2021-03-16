@@ -38,19 +38,31 @@ export const expList: ExpInter[] = [{
   time: "November 2017 - March 2019",
   text: "Beginning as a contractor, and hired on as full-time staff a few months.",
   bullets: ["Maintained and ran a building with 100-140 employees by coordinating vendors, inventory and ordering of supplies, reorganizing storage system and processing invoices", "Worked to improve employee and client experiences by encouraging interagency mingling, improving amenities, planning and hosting happy hours, and organizing tournaments"],
-}]
+}, {
+  id: 2,
+  role: "Sourcer",
+  company: "T3 Intelligence",
+  location: "San Francisco",
+  time: "",
+  text: "Used boolean search parameters to find candidates qualified based on client specifications ",
+bullets: ["Blah blah","blah"]
+}
+]
 
 export const eduList: EduInter[] = [{
   id: 1,
   school: "Mount Holyoke College",
   time: "2009-2013",
+  fieldLabel:"Degree",
   field: "B.A. in Russian Literature & Culture with a minor is history",
-  subfield: "Minor: History",
+  subfieldLabel:"Minor",
+  subfield: "History",
 }, {
   id: 2,
   school: "Lambda School",
   time: "2019-2020",
-  field: "Course: Web Development",
+  fieldLabel:"Course",
+  field: "Web Development",
 }]
 
 export const skillsList: Skill[] = [{
@@ -76,7 +88,7 @@ export const hobbyProjs: HobbyInter[] = [
     id: 2,
     name: "Blue Alhambra Purse",
     description: "The brass design was inspired by the Alhambra Palace in Grenada, Spain. This was my first time combining metal and leather and my first self-drafted leather pattern.",
-    images: [{ src: "blue-finished-front.jpg", alt: "Finished Blue Purse" }, { src: "blue-finished-corner.jpg", alt: "Angled Finished Blue Purse" }, { src: "blue-sides.jpg", alt: "Finished sides" }, { src: "blue-side-pieces.jpg", alt: "Unfinished sides" },],
+    images: [{ src: "blue-finished-w-strap.jpg", alt: "Finished purse with strap" }, { src: "blue-finished-front.jpg", alt: "Finished Blue Purse" }, { src: "blue-finished-corner.jpg", alt: "Angled Finished Blue Purse" }, { src: "blue-sides.jpg", alt: "Finished sides" }, { src: "blue-side-pieces.jpg", alt: "Unfinished sides" },],
     directory: "blue-purse"
   }
   ,
@@ -84,14 +96,14 @@ export const hobbyProjs: HobbyInter[] = [
     id: 3,
     name: "Purple Kojitsugani and Sakura Purse",
     description: "My second self-drafted pattern, borrowing inspiration from my Japanese heritage. In this project I explored a new method of attaching metal to leather using prongs.",
-    images: [{ src: "purple-metal-1.jpg", alt: "Metal cutting progress pic" }, { src: "purple-metal-2.jpg", alt: "Finished metal cutting and filing" }, { src: "purple-shaping.jpg", alt: "Shaping the leather around a form" }],
+    images: [{ src: "small-purple-finished.jpg", alt: "Finished purse front" }, { src: "purple-shaping.jpg", alt: "Shaping the leather around a form" }, { src: "purple-metal-2.jpg", alt: "Finished metal cutting and filing" }, { src: "purple-metal-1.jpg", alt: "Metal cutting progress pic" },],
     directory: "small-purple-purse"
   },
   {
     id: 4,
     name: "Art-Deco Purple Purse",
     description: "Worked with a client to create an updated website for a 3D Training Company using client images, colors, and copy. Netlify CMS ensures the client can add e-learnings, blog posts and update content on demand.",
-    images: [{src:"purple-interior.jpg",alt:"Interior of unfinished purse"},{ src: "purple-side-front.jpg", alt: "Front and side of purse" }, { src: "purple-side-2.jpg", alt: "Sewn side of purse" }, { src: "purple-side-1.jpg", alt: "Layed out side of purse" }, { src: "purple-metal-3.jpg", alt: "" }, { src: "purple-metal-2.jpg", alt: "" }, { src: "purple-metal-1.jpg", alt: "" }],
+    images: [{ src: "round-purple-finished.jpg", alt: "Finished purse front" }, { src: "round-purple-finished-side.jpg", alt: "Finished purse side angle" }, { src: "purple-interior.jpg", alt: "Interior of unfinished purse" }, { src: "purple-side-front.jpg", alt: "Front and side of purse" }, { src: "purple-side-2.jpg", alt: "Sewn side of purse" }, { src: "purple-side-1.jpg", alt: "Layed out side of purse" }, { src: "purple-metal-3.jpg", alt: "" }, { src: "purple-metal-2.jpg", alt: "" }, { src: "purple-metal-1.jpg", alt: "" }],
     directory: "round-purple-purse"
   },
   {
@@ -105,7 +117,7 @@ export const hobbyProjs: HobbyInter[] = [
     id: 6,
     name: "Wallets",
     description: "So far I have made 3 bifold wallets. It's gratifying to see so much improvement. I've enjoyed coming up with new card slot patterns.",
-    images: [{ src: "wallet1-partially-sewed.jpg", alt: "Partially sewn wallet" }, { src: "wallet1-pieces.jpg", alt: "Assembled pieces of the wallet" }, { src: "wallet2-partially-sewed.jpg", alt: "Partially sewn wallet" }, { src: "wallet2-stacked.jpg", alt: "Assembled pieces of the wallet" }, { src: "wallet2-separate.jpg", alt: "Separated card slot pieces" }],
+    images: [{ src: "wallets-finished.jpg", alt: "Finished wallets open" }, { src: "wallets-finished-closed.jpg", alt: "Closed finished wallets" }, { src: "wallet1-partially-sewn.jpg", alt: "Partially sewn wallet" }, { src: "wallet1-pieces.jpg", alt: "Assembled pieces of the wallet" }, { src: "wallet2-partially-sewn.jpg", alt: "Partially sewn wallet" }, { src: "wallet2-stacked.jpg", alt: "Assembled pieces of the wallet" }, { src: "wallet2-separate.jpg", alt: "Separated card slot pieces" }],
     directory: "wallets"
   }
 ]

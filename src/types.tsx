@@ -28,7 +28,9 @@ export interface EduInter {
   id: number,
   school: string,
   time: string,
+  fieldLabel: string,
   field: string,
+  subfieldLabel?:string,
   subfield?: string,
 }
 

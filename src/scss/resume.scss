@@ -1,11 +1,14 @@
 @import "variables";
 
 .resume-wrapper {
+  display:flex;
 
   .skills-wrapper {
     padding: 3%;
     width: auto;
     border: 1px solid red;
+    margin-left:2em;
+
     .skills-heading{
       color:color(heading-l)
     }
@@ -24,6 +27,8 @@
     }
   }
   .exp-wrapper{
+
+    @include page-width;
 
     .exp-item{
       list-style-type: disc;
