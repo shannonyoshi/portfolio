@@ -36,8 +36,8 @@ export const expList: ExpInter[] = [{
   company: "Jones Lang LaSalle",
   location: "San Francisco",
   time: "November 2017 - March 2019",
-  text: "Beginning as a contractor, and hired on as full-time staff a few months.",
-  bullets: ["Maintained and ran a building with 100-140 employees by coordinating vendors, inventory and ordering of supplies, reorganizing storage system and processing invoices", "Worked to improve employee and client experiences by encouraging interagency mingling, improving amenities, planning and hosting happy hours, and organizing tournaments"],
+  text: "Beginning as a contractor, then hired as full-time employee. ",
+  bullets: ["Contrived improvement projects in order to maximize improvements while minimizing costs","Improved and ran a building with 100-140 employees by increasing amenities; coordinating vendors, inventory, and ordering of supplies, creating storage system and processing invoices", "Worked to improve employee and client experiences by encouraging interagency mingling, improving amenities, planning and hosting happy hours, and organizing tournaments"],
 }, {
   id: 2,
   role: "Sourcer",

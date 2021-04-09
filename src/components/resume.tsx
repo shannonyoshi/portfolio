@@ -8,22 +8,23 @@ import "../scss/resume.scss"
 const Resume: FC = () => {
   return (
     <div className="resume-wrapper">
-      <div className="left">
+      <h2 className="under-construction">Under construction. Please check back soon!</h2>
+      {/* <div className="left">
         <Skills />
       </div>
       <div className="right">
-        <div className="exp-section">
+        <section className="exp-section">
           <h2>Experience</h2>
           {expList.map(exp =>
             <Experience exp={exp} key={`exp-${exp.id}`} />
           )}
-        </div>
-        <div className="edu-section">
+        </section>
+        <section className="edu-section">
           <h2>Education</h2>
           {eduList.map(edu =>
             <Education edu={edu} />)}
-        </div>
-      </div>
+        </section>
+      </div> */}
     </div>
   )
 }
