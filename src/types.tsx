@@ -2,6 +2,7 @@ export interface ProjInter {
   id: number,
   name: string,
   role: string,
+  motivation?: string,
   description: string,
   stack: string[],
   url: string,
@@ -30,7 +31,7 @@ export interface EduInter {
   time: string,
   fieldLabel: string,
   field: string,
-  subfieldLabel?:string,
+  subfieldLabel?: string,
   subfield?: string,
 }
 
@@ -39,12 +40,20 @@ export interface Skill {
   sub: string[]
 }
 
+
 export interface HobbyInter {
+  id: number,
+  name: string,
+  blurb: string,
+  projects: HobbyProj[]
+}
+
+export interface HobbyProj {
   id: number,
   name: string,
   description: string,
   images: Image[],
-  directory?:string
+  directory?: string
 }
-  
+
 export type PageOpts = "portfolio" | "resume" | "about"

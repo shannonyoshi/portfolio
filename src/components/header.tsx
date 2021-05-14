@@ -26,7 +26,7 @@ const Header: FC<HeaderProps> = ({ imageBG, altBG, imageMe, blurb }): JSX.Elemen
 
           <h3>Shannon  &nbsp;</h3><h3 className="indented">Yoshikawa</h3>
           </div>
-          <div className="wrap-text">
+          <div className="wrap-text light">
 
           <h3 className="indented">Full Stack  &nbsp;</h3><h3>Web Developer</h3>
           </div>

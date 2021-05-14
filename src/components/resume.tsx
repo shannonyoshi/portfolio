@@ -8,8 +8,8 @@ import "../scss/resume.scss"
 const Resume: FC = () => {
   return (
     <div className="resume-wrapper">
-      <h2 className="under-construction">Under construction. Please check back soon!</h2>
-      {/* <div className="left">
+      {/* <h2 className="under-construction">Under construction. Please check back soon!</h2> */}
+      <div className="left">
         <Skills />
       </div>
       <div className="right">
@@ -24,7 +24,7 @@ const Resume: FC = () => {
           {eduList.map(edu =>
             <Education edu={edu} />)}
         </section>
-      </div> */}
+      </div>
     </div>
   )
 }

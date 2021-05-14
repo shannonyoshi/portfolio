@@ -2,27 +2,43 @@
 
 .page-about {
   width: 100%;
-  .top {
+  .text {
     @include page-width;
-  }
 
-  .hobby-wrapper {
+    p,
+    h5 {
+      width: 100%;
+      max-width: 700px;
+      // text-align:center;
+      margin: auto;
+    }
+    h5, h3 {
+      text-align: center;
+    }
+  }
+  .h-projects{
+    height:100%;
     @include fade-bg;
+    // display:flex;
+    // justify-content:space-between;
+    // flex-wrap: wrap;
+    // align-items:stretch;
+  }
+  .h-proj-wrapper {
+    min-width:500px;
+    margin: 0;
     padding: 1em 0;
+    height:100%;
+    // display:flex;
+    // flex-wrap:wrap;
     @include small-screen {
       padding: 0.5em 0;
     }
   }
-  .content {
-    @include page-width;
 
-    p,
-    h4 {
-      max-width: 100%;
-      width: 700px;
-      margin: auto;
-    }
-  }
+  // .project-slider{
+  //   align-self:flex-end;
+  // }
   .info {
     padding: 1em 0;
     @include small-screen {

@@ -56,7 +56,12 @@ header {
     white-space: nowrap;
     .dark {
       h3 {
-        color: color(heading);
+        color:color(dark-blue);
+      }
+    }
+    .light {
+      h3 {
+        color: color(light-blue);
       }
     }
     h3{
@@ -76,7 +81,7 @@ header {
     }
     // h2,
     // h3 {
-    //   color: color(heading);
+    //   color: color(dark-blue);
     //   line-height: 1.25;
     //   // text-align:center;
     // }

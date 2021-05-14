@@ -29,11 +29,11 @@
 
   .link {
     text-decoration: underline;
-    color: color(sub-heading);
+    color: color(light-blue);
     display:inline-block;
     @include raise;
     &:hover{
-      color: color(heading-l);
+      color: color(med-blue);
     }
   }
 
@@ -51,9 +51,9 @@
     height: 3em;
     width: auto;
     text-decoration: none;
-    color: color(sub-heading);
+    color: color(light-blue);
     &:hover{
-      color: color(heading-l);
+      color: color(med-blue);
     }
     @include raise;
     @include tablet {
