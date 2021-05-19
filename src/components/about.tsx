@@ -7,6 +7,7 @@ import Slider from "./img-slider";
 import "../scss/about.scss";
 
 const About: FC = (): JSX.Element => {
+
   return (
     <div className="page-about">
       <div className="text">
@@ -23,7 +24,8 @@ const About: FC = (): JSX.Element => {
 }
 
 type HobbyProps = {
-  hobby: HobbyInter
+  hobby: HobbyInter,
+
 }
 
 const Hobby: FC<HobbyProps> = ({ hobby }): JSX.Element => {
@@ -31,11 +33,11 @@ const Hobby: FC<HobbyProps> = ({ hobby }): JSX.Element => {
     <div className="hobby-wrapper">
       <div className="text">
 
-      <h3>{hobby.name}</h3>
-      <p>{hobby.blurb}</p>
+        <h3>{hobby.name}</h3>
+        <p>{hobby.blurb}</p>
       </div>
-    <div className="h-projects">
-      {hobby.projects.map(proj=><HobProj project={proj} key={`hID-${hobby.id} pID=${proj.id}`}/>)}
+      <div className={`h-projects`}>
+        {hobby.projects.map(proj => <HobProj project={proj} key={`hID-${hobby.id} pID=${proj.id}`} />)}
       </div>
     </div>
   )
@@ -49,15 +51,12 @@ const HobProj: FC<HobbyProjProps> = ({ project }): JSX.Element => {
   return (
     <div className="h-proj-wrapper">
       <div className="proj-text">
-        <div className="text">
-          <h5>{project.name}</h5>
-
-          <p>{project.description}</p>
-        </div>
-      </div >
-        <div className="project-slider">
-          <Slider images={project.images} directory={project.directory} small={true} />
-        </div>
+        <h5 className="title">{project.name}</h5>
+        <p className="description">{project.description}</p>
+      </div>
+      <div className="project-slider">
+        <Slider images={project.images} directory={project.directory} small={true} />
+      </div>
     </div >
   )
 }

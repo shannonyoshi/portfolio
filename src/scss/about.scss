@@ -17,28 +17,54 @@
     }
   }
   .h-projects{
-    height:100%;
-    @include fade-bg;
-    // display:flex;
-    // justify-content:space-between;
-    // flex-wrap: wrap;
-    // align-items:stretch;
-  }
-  .h-proj-wrapper {
-    min-width:500px;
-    margin: 0;
-    padding: 1em 0;
-    height:100%;
-    // display:flex;
-    // flex-wrap:wrap;
-    @include small-screen {
-      padding: 0.5em 0;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap:1em;
+    text-align: center;
+    @include small-screen{
+      display:block;
     }
   }
+  .h-proj-wrapper {
+    @include fade-bg;
+    min-width:500px;
+    // grid-row: auto/span 3;
+    // display:grid;
+    // grid-template-rows: subgrid;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
 
-  // .project-slider{
-  //   align-self:flex-end;
-  // }
+    @include small-screen {
+      // padding-top: 0.5em;
+      display:block;
+    }
+    .description{
+      padding:1em 0;
+    }
+    .proj-text {
+      margin-bottom:auto;
+      
+      p,
+      h5 {
+        width: 100%;
+        max-width: 700px;
+        margin:auto;
+      }
+      h5, h3 {
+        text-align: center;
+      }
+    }
+    .title{
+      padding-top:1em;
+
+    }
+  }
+  .project-slider{
+    // height:auto;
+    padding-bottom:1em;
+  }
+
   .info {
     padding: 1em 0;
     @include small-screen {

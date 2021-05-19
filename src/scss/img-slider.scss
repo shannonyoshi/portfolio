@@ -1,6 +1,7 @@
 @import "variables";
 
 .slider-wrapper {
+  height:auto;
   // margin-bottom: 2em;
   // margin:0 auto 2em auto;
   text-align: center;
@@ -28,6 +29,10 @@
     .icon-btn {
       height: 3em;
       width: 3em;
+      @include small-screen{
+        height:2em;
+        width:2em;
+      }
     }
   }
   .dots {
@@ -42,11 +47,19 @@
     border-radius: 50%;
     background-color: color(light-blue);
     cursor: grab;
+    @include small-screen {
+      height:.6em;
+      width:.6em
+    }
   }
   .selected {
     height: 1em;
     width: 1em;
     background-color: color(med-blue);
+    @include small-screen{
+      height:.75em;
+      width:.75em;
+    }
   }
 
   .slider-img {

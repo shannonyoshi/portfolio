@@ -123,7 +123,7 @@ export const hobbyList: HobbyInter[] = [
       {
         id: 3,
         name: "Art-Deco Purple Purse",
-        description: "Worked with a client to create an updated website for a 3D Training Company using client images, colors, and copy. Netlify CMS ensures the client can add e-learnings, blog posts and update content on demand.",
+        description: "I originally created the center design for a different project, then expanded on it for this purse. I improved upon a previous design to include an additional interior pocket, and key clip",
         images: [{ src: "round-purple-finished.jpg", alt: "Finished purse front" }, { src: "round-purple-finished-side.jpg", alt: "Finished purse side angle" }, { src: "purple-interior.jpg", alt: "Interior of unfinished purse" }, { src: "purple-side-front.jpg", alt: "Front and side of purse" }, { src: "purple-side-2.jpg", alt: "Sewn side of purse" }, { src: "purple-side-1.jpg", alt: "Layed out side of purse" }, { src: "purple-metal-3.jpg", alt: "" }, { src: "purple-metal-2.jpg", alt: "" }, { src: "purple-metal-1.jpg", alt: "" }],
         directory: "round-purple-purse"
       },
