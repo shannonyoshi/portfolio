@@ -8,7 +8,6 @@ import "../scss/resume.scss"
 const Resume: FC = () => {
   return (
     <div className="resume-wrapper">
-      {/* <h2 className="under-construction">Under construction. Please check back soon!</h2> */}
       <div className="left">
         <Skills />
       </div>
