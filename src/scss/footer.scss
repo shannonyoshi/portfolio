@@ -1,0 +1,26 @@
+@import "variables";
+
+footer{
+  position:relative;
+  .contact {
+    position:absolute;
+    top: 50px;
+    left:0;
+    right:0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .contact-icon{
+    font-size: 32px;
+    padding:2px;
+    text-decoration:none;
+    color: color(light-blue);
+    @include raise;
+    &:hover{
+      color:color(med-blue);
+    }
+  }
+  .at-icon{
+    font-size:12px;
+  }
+}

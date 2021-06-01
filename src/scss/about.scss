@@ -15,11 +15,13 @@
     h5 {
       width: 100%;
       max-width: 700px;
-      // text-align:center;
       margin: auto;
     }
     h5, h3 {
       text-align: center;
+    }
+    p {
+      padding:10px 0;
     }
   }
   .h-projects{
@@ -34,28 +36,23 @@
   .h-proj-wrapper {
     @include fade-bg;
     min-width:500px;
-    // grid-row: auto/span 3;
-    // display:grid;
-    // grid-template-rows: subgrid;
     display:flex;
     flex-direction: column;
     justify-content: space-between;
 
     @include small-screen {
-      // padding-top: 0.5em;
       display:block;
     }
-    .description{
-      padding:1em 0;
-    }
     .proj-text {
+      margin-top:0;
       margin-bottom:auto;
       
       p,
       h5 {
-        width: 100%;
+        // width: 100%;
         max-width: 700px;
         margin:auto;
+        text-align: start;
       }
       h5, h3 {
         text-align: center;
@@ -71,7 +68,7 @@
     padding-bottom:1em;
   }
 
-  .info {
+  .info{
     padding: 1em 0;
     @include small-screen {
       padding: 0.5em 0;

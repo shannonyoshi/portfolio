@@ -11,8 +11,6 @@ const About: FC = (): JSX.Element => {
   return (
     <div className="page-about">
       <div className="text">
-
-        {/* <h3>Hobbies & Interests</h3> */}
         <p className="blurb">{hobbyBlurb}</p>
 
       </div>
@@ -50,7 +48,7 @@ type HobbyProjProps = {
 const HobProj: FC<HobbyProjProps> = ({ project }): JSX.Element => {
   return (
     <div className="h-proj-wrapper">
-      <div className="proj-text">
+      <div className="proj-text text">
         <h5 className="title">{project.name}</h5>
         <p className="description">{project.description}</p>
       </div>

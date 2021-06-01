@@ -33,16 +33,16 @@ export const expList: ExpInter[] = [{
   company: "Jones Lang LaSalle",
   location: "San Francisco",
   time: "November 2017 - March 2019",
-  text: "Beginning as a contractor, then hired as full-time employee. ",
+  text: "Managed a commercial building with 100-140 employees. Originally hired as a contractor, then transitioned into full-time employment",
   bullets: ["Contrived projects to maximize improvements while maintaining costs", "Improved and ran a building with 100-140 employees by increasing amenities; coordinating vendors, inventory, and ordering of supplies; creating a storage system; and processing invoices", "Worked to improve employee and client experiences by encouraging and planning interagency social events"],
 }, {
   id: 2,
   role: "Sourcer",
   company: "T3 Intelligence",
   location: "San Francisco",
-  time: "",
-  text: "Used boolean search parameters to find candidates qualified based on client specifications ",
-  bullets: ["Blah blah", "blah"]
+  time: "October 2015 - September 2016",
+  text: "Used boolean search parameters to find qualified candidates",
+  bullets: ["Collected feedback and requirements from clients to define search requirements", "Reviewed 2 colleagues’ search queries and advised on methods to improve", "Collaborated with a team to source an average of 100 candidates per role to front-load the recruitment funnel for opportunities in the consumer packaged goods, mortgage, and banking industries"]
 }
 ]
 
@@ -51,7 +51,7 @@ export const eduList: EduInter[] = [{
   school: "Mount Holyoke College",
   time: "2009-2013",
   fieldLabel: "Degree",
-  field: "B.A. in Russian Literature & Culture with a minor is history",
+  field: "B.A. in Russian Literature & Culture",
   subfieldLabel: "Minor",
   subfield: "History",
 }, {
@@ -63,7 +63,6 @@ export const eduList: EduInter[] = [{
 }]
 
 export const skillsList: string[] = ["Golang", "Hugo", "Javascript", "Typescript", "React", "Node", "Express", "Jest", "Python", "Django", "PostgreSQL", "HTML", "CSS", "SCSS"]
-
 
 export const hobbyBlurb: string = "Check out a few of my current hobbies below. In addition to leather and metal working, I like to spend my spare time cycling, baking, playing ukulele, and camping."
 

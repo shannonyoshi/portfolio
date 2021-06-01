@@ -1,62 +1,71 @@
- @import "variables";
+@import "variables";
 
 .resume-wrapper {
-  max-width:850px;
-  margin:auto;
-  display:flex;
+  max-width: 850px;
+  margin: auto;
+  display: flex;
   justify-content: space-around;
-  min-height:70vh;
+  min-height: 70vh;
 
-  @include tablet{
+  @include tablet {
     flex-direction: column;
   }
 
   .skills-wrapper {
-    @include tablet{
+    @include tablet {
       @include page-width;
     }
-    }
-    .skills-heading{
-      color:color(med-blue)
-    }
-    ul {
-      list-style-type: none;
-      @include tablet{
+  }
+  .skills-heading {
+    color: color(med-blue);
+    padding-bottom:.5em;
+  }
+  ul {
+    list-style-type: none;
+    margin-left: 1rem;
+    @include tablet {
       @include page-width;
-      display:flex;
+      display: flex;
       flex-direction: row;
       flex-wrap: wrap;
-      }
+      justify-content: flex-start;
+      margin-left:.5rem;
     }
-    .skill {
-      text-indent: 1em;
-      margin-top: 5px;
-      color:color(grey);
-      font-weight: 550;
-      @include small-text;
-      @include tablet{
-        margin:3px;
-        }
-    }
-  .right{
+  }
+  .skill {
+    color: color(grey);
+    font-weight: 550;
+    @include small-text;
+    padding-right:.5em;
+  }
+  .lang-heading{
+    padding-bottom:.5em;
+  }
+  .lang {
+    text-indent: 15px;
+    font-weight: 550;
+  }
+  .right {
     @include page-width;
-    max-width:700px;
-    margin-right:0px;
-    @include tablet{
-      margin:auto;
-    }   
-  }
-  section{
-    margin-top: 1em;
-  }
-  .exp-wrapper, .edu-wrapper{
-    margin:1em;
-  }
-
-
-    .exp-item{
-      list-style-type: disc;
-      display: list-item;
-      margin-left:1em;
+    max-width: 700px;
+    margin-right: 0px;
+    @include tablet {
+      margin: auto;
     }
- }
+  }
+  section {
+    margin-bottom: 1rem;
+  }
+  .exp-wrapper,
+  .edu-wrapper {
+    margin: 1rem;
+  }
+  .exp-text {
+    font-weight: 550;
+  }
+  .exp-item {
+    list-style-type: disc;
+    display: list-item;
+    margin-left: 1rem;
+  }
+}

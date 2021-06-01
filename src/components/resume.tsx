@@ -67,6 +67,9 @@ const Skills: FC = (): JSX.Element => {
         <li className="skill" key={`skill-${index}`}>{skill}</li>
       )}
     </ul>
+
+    <h4 className="lang-heading">Languages</h4>
+    <p className="lang">Russian</p>  
   </div>
 }
 
