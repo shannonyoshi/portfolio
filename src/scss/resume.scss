@@ -1,46 +1,62 @@
-@import "variables";
+ @import "variables";
 
 .resume-wrapper {
+  max-width:850px;
+  margin:auto;
   display:flex;
-  //TODO: remove this after resume updated
-  justify-content: center;
+  justify-content: space-around;
   min-height:70vh;
-  .under-construction{
-    padding:2em;
 
+  @include tablet{
+    flex-direction: column;
   }
 
   .skills-wrapper {
-    padding: 3%;
-    width: auto;
-    border: 1px solid red;
-    margin-left:2em;
-
+    @include tablet{
+      @include page-width;
+    }
+    }
     .skills-heading{
       color:color(med-blue)
     }
     ul {
       list-style-type: none;
+      @include tablet{
+      @include page-width;
+      display:flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      }
     }
-    .main-item {
+    .skill {
+      text-indent: 1em;
       margin-top: 5px;
       color:color(grey);
-      @include small-text;
       font-weight: 550;
+      @include small-text;
+      @include tablet{
+        margin:3px;
+        }
     }
-    .sub-list {
-      text-indent: 1em;
-      font-weight:400;
-    }
-  }
-  .exp-wrapper{
-
+  .right{
     @include page-width;
+    max-width:700px;
+    margin-right:0px;
+    @include tablet{
+      margin:auto;
+    }   
+  }
+  section{
+    margin-top: 1em;
+  }
+  .exp-wrapper, .edu-wrapper{
+    margin:1em;
+  }
+
 
     .exp-item{
       list-style-type: disc;
       display: list-item;
       margin-left:1em;
     }
-  }
-}
+ }

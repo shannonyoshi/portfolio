@@ -1,6 +1,6 @@
 import React, { FC } from "react";
 
-import { ExpInter, Skill, EduInter } from "../types"
+import { ExpInter, EduInter } from "../types"
 import { skillsList, expList, eduList } from "../info"
 
 import "../scss/resume.scss"
@@ -63,13 +63,8 @@ const Skills: FC = (): JSX.Element => {
   return <div className="skills-wrapper">
     <h3 className="skills-heading">Skills</h3>
     <ul className="main-list">
-      {skillsList.map((skill: Skill, index: number) =>
-        <li className="main-item" key={`skill-${index}`}>{skill.main}
-          <ul className="sub-list">
-            {skill.sub.length > 0 ? skill.sub.map((sub, i) =>
-              <li className="sub-item" key={`skill-${skill} ${i}`}>{sub}</li>) : ""}
-          </ul>
-        </li>
+      {skillsList.map((skill: string, index: number) =>
+        <li className="skill" key={`skill-${index}`}>{skill}</li>
       )}
     </ul>
   </div>

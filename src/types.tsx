@@ -1,8 +1,6 @@
 export interface ProjInter {
   id: number,
   name: string,
-  role: string,
-  motivation?: string,
   description: string,
   stack: string[],
   url: string,
@@ -33,11 +31,6 @@ export interface EduInter {
   field: string,
   subfieldLabel?: string,
   subfield?: string,
-}
-
-export interface Skill {
-  main: string,
-  sub: string[]
 }
 
 

@@ -2,6 +2,12 @@
 
 .page-about {
   width: 100%;
+  .blurb {
+    padding: 1em 0;
+  }
+  .hobby-wrapper {
+    padding-top:1em;
+  }
   .text {
     @include page-width;
 

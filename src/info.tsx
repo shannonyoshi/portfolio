@@ -1,31 +1,26 @@
-import { ProjInter, ExpInter, EduInter, Skill, HobbyInter } from "./types";
+import { ProjInter, ExpInter, EduInter, HobbyInter } from "./types";
 
 export const projList: ProjInter[] = [{
   id: 1,
   name: "Baking Unit Converter",
-  role: "Front and Back End Development",
-  motivation: "Different measurements systems are used around the world for cooking and baking. In the US, we use mostly volume to measure ingredient quantities. However, most of the world favors weight and the metric system for its greater accuracy. The Baking Unit Converter makes it easy to create a list of converted ingredients in idiomatic language. Customizable weight and volume charts are a useful reference.",
-  description: "Users input an amount as decimal or fraction, starting unit, target unit, and ingredient name. This ingredient is converted by the front end when the conversion is weight to weight or volume to volume, and the ingredient name is not required. The backend stores ingredient specific volume to weight information, which is used to convert weight to volume and vice versa.  A 3rd party API provides the necessary information for new ingredients. An editable list of ingredients is created for ease of use.",
-  stack: ["React", "Golang"],
+  description: "Converts ingredient measurements between weight and volume. Uses data fetched from 3rd party API.",
+  stack: ["React", "Golang", "PostgreSQL"],
   url: "https://bakingunits.com/",
   github: "https://github.com/shannonyoshi/unit-conversion",
   images: [{ src: "baking-units.png", alt: "Baking Units Homepage" }, { src: "baking-units-volume-chart.png", alt: "Baking Units Volume Chart" }, { src: "baking-units-custom-chart.png", alt: "Baking Units custom unit chart" }, { src: "baking-units-suggestion-form.png", alt: "Baking Units Suggestion Form" }]
 }, {
   id: 2,
   name: "Match-Game",
-  role: "Front End Development",
-  motivation: "I played this game as a child, so it seemed an obvious choice to clone while teaching myself typescript and practicing the CSS grid layout. The game consists of finding matches of 3 cards until all of the 81 unique cards are drawn and all matches are found.",
-  description: "A front end only card game web application using hooks for state management. Users can choose between 4 distinct color schemes, get hints when stuck, and view the matches they've already found.",
-  stack: ["React with TypeScript"],
+  description: "Pattern recognition card game built with Typescript and React.",
+  stack: ["React", "TypeScript"],
   url: "https://match-game.syoshi.dev/",
   github: "https://github.com/shannonyoshi/match-game",
   images: [{ src: "match-game-instructions-default.png", alt: "Instructions Default Mode" }, { src: "match-game-hint.png", alt: "Match Game Hint Default Mode" }, { src: "match-game-error-dark.png", alt: "Match Game Error Dark Mode" }, { src: "match-game-mono-matches.png", alt: "Match Game Matches Mono Mode" }, { src: "match-game-mono-dark.png", alt: "Match Game Instructions Mono-Dark Mode" },]
 }, {
   id: 3,
   name: "Training in the 21st Century Website",
-  role: "Front and Backend Development",
-  description: "Worked with a client to create an updated website for a 3D Training Company using client images, colors, and copy. Netlify CMS ensures the client can add e-learnings, blog posts and update content on demand.",
-  stack: ["Hugo with React admin portal", "Golang"],
+  description: "Migrated Wordpress site to Netlify CMS.",
+  stack: ["Hugo", "React", "Netlify"],
   url: "https://www.traininginthe21stcentury.com/",
   github: "https://github.com/shannonyoshi/match-game",
   images: [{ src: "t21c-home.png", alt: "T21C Homepage" }, { src: "t21c-home-lower.png", alt: "T21C Homepage:Why use blended learning?" }, { src: "t21c-services.png", alt: "T21C Services Page" }]
@@ -39,7 +34,7 @@ export const expList: ExpInter[] = [{
   location: "San Francisco",
   time: "November 2017 - March 2019",
   text: "Beginning as a contractor, then hired as full-time employee. ",
-  bullets: ["Contrived improvement projects in order to maximize improvements while minimizing costs", "Improved and ran a building with 100-140 employees by increasing amenities; coordinating vendors, inventory, and ordering of supplies, creating storage system and processing invoices", "Worked to improve employee and client experiences by encouraging interagency mingling, improving amenities, planning and hosting happy hours, and organizing tournaments"],
+  bullets: ["Contrived projects to maximize improvements while maintaining costs", "Improved and ran a building with 100-140 employees by increasing amenities; coordinating vendors, inventory, and ordering of supplies; creating a storage system; and processing invoices", "Worked to improve employee and client experiences by encouraging and planning interagency social events"],
 }, {
   id: 2,
   role: "Sourcer",
@@ -67,17 +62,10 @@ export const eduList: EduInter[] = [{
   field: "Web Development",
 }]
 
-export const skillsList: Skill[] = [{
-  main: "Golang", sub: ["Hugo"]
-}, {
-  main: "Javascript", sub: ["React", "Node", "Express", "Jest"]
-}, {
-  main: "Python", sub: ["Django"]
-}, {
-  main: "PostgreSQL", sub: []
-}
-]
-export const hobbyBlurb: string = "I love making things! My main hobbies right now are leather working, metalworking, baking, and cycling."
+export const skillsList: string[] = ["Golang", "Hugo", "Javascript", "Typescript", "React", "Node", "Express", "Jest", "Python", "Django", "PostgreSQL", "HTML", "CSS", "SCSS"]
+
+
+export const hobbyBlurb: string = "Check out a few of my current hobbies below. In addition to leather and metal working, I like to spend my spare time cycling, baking, playing ukulele, and camping."
 
 export const hobbyList: HobbyInter[] = [
   {

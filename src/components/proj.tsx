@@ -34,12 +34,9 @@ const Project: FC<ProjectProps> = ({ project }): JSX.Element => {
         <div className="text-wrapper">
 
           <h3>{project.name}</h3>
-          <h4>{project.role}</h4>
-          {project.motivation? <p><span className="label">Motivation: </span>{project.motivation}</p>: ""}
           <p><span className="label">Description: </span>{project.description}</p>
           <div className="layout">
             <div className="left">
-
               <p id="stack"><span className="label">Stack: </span>{project.stack.join(", ")}</p>
               <p><span className="label">URL: </span>
                 <a className="link" href={project.url} target="_blank" rel="noopener noreferrer">

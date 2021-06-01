@@ -1,7 +1,7 @@
 import React, { FC } from "react";
 
 import { HobbyInter, HobbyProj } from "../types";
-import { hobbyList } from "../info";
+import { hobbyList, hobbyBlurb } from "../info";
 
 import Slider from "./img-slider";
 import "../scss/about.scss";
@@ -13,7 +13,7 @@ const About: FC = (): JSX.Element => {
       <div className="text">
 
         {/* <h3>Hobbies & Interests</h3> */}
-        <p>My main hobbies right now are leather working, metalworking, baking, and cycling.</p>
+        <p className="blurb">{hobbyBlurb}</p>
 
       </div>
 
