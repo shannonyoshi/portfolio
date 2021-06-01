@@ -7,6 +7,7 @@ import Navigation from "./components/nav"
 import Projects from "./components/proj"
 import About from "./components/about"
 import Resume from "./components/resume"
+import Footer from "./components/footer"
 
 import { PageOpts } from "./types";
 
@@ -24,9 +25,7 @@ const App: FC = () :JSX.Element=> {
             <About />
         }
       </section>
-      <footer>
-      <img src={`/assets/seattle(eric-zhang)crop.jpg`} alt="upside down seattle skyline" className="bg" />
-      </footer>
+        <Footer/>
     </div>
   );
 }

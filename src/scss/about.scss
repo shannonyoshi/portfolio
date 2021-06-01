@@ -2,28 +2,73 @@
 
 .page-about {
   width: 100%;
-  .top {
-    @include page-width;
-  }
-
-  .hobby-wrapper {
-    @include fade-bg;
+  .blurb {
     padding: 1em 0;
-    @include small-screen {
-      padding: 0.5em 0;
-    }
   }
-  .content {
+  .hobby-wrapper {
+    padding-top:1em;
+  }
+  .text {
     @include page-width;
 
     p,
-    h4 {
-      max-width: 100%;
-      width: 700px;
+    h5 {
+      width: 100%;
+      max-width: 700px;
       margin: auto;
     }
+    h5, h3 {
+      text-align: center;
+    }
+    p {
+      padding:10px 0;
+    }
   }
-  .info {
+  .h-projects{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap:1em;
+    text-align: center;
+    @include small-screen{
+      display:block;
+    }
+  }
+  .h-proj-wrapper {
+    @include fade-bg;
+    min-width:500px;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    @include small-screen {
+      display:block;
+    }
+    .proj-text {
+      margin-top:0;
+      margin-bottom:auto;
+      
+      p,
+      h5 {
+        // width: 100%;
+        max-width: 700px;
+        margin:auto;
+        text-align: start;
+      }
+      h5, h3 {
+        text-align: center;
+      }
+    }
+    .title{
+      padding-top:1em;
+
+    }
+  }
+  .project-slider{
+    // height:auto;
+    padding-bottom:1em;
+  }
+
+  .info{
     padding: 1em 0;
     @include small-screen {
       padding: 0.5em 0;

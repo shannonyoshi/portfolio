@@ -1,22 +1,21 @@
 import React, { FC } from "react";
 
-import { HobbyInter } from "../types";
-import { hobbyProjs } from "../info";
+import { HobbyInter, HobbyProj } from "../types";
+import { hobbyList, hobbyBlurb } from "../info";
 
 import Slider from "./img-slider";
 import "../scss/about.scss";
 
 const About: FC = (): JSX.Element => {
+
   return (
     <div className="page-about">
-      <div className="top">
+      <div className="text">
+        <p className="blurb">{hobbyBlurb}</p>
 
-        <h3>Hobbies</h3>
-
-        <p>I'm not really sure what to say here, so I'll just share some of my hobbies and projects.</p>
       </div>
 
-      {hobbyProjs.map(proj => <Hobby hobby={proj} key={`hobby-${proj.id}`} />)}
+      {hobbyList.map(hobby => <Hobby hobby={hobby} key={`hobby-${hobby.id}`} />)}
 
     </div>
   )
@@ -24,21 +23,38 @@ const About: FC = (): JSX.Element => {
 
 type HobbyProps = {
   hobby: HobbyInter,
+
 }
 
 const Hobby: FC<HobbyProps> = ({ hobby }): JSX.Element => {
   return (
     <div className="hobby-wrapper">
-      <div className="content">
-        <div className="info">
-          <h4>{hobby.name}</h4>
+      <div className="text">
 
-          <p>{hobby.description}</p>
-        </div>
-        <div className="hobby-slider">
-          <Slider images={hobby.images} directory={hobby.directory} small={true} />
-        </div>
-      </div >
+        <h3>{hobby.name}</h3>
+        <p>{hobby.blurb}</p>
+      </div>
+      <div className={`h-projects`}>
+        {hobby.projects.map(proj => <HobProj project={proj} key={`hID-${hobby.id} pID=${proj.id}`} />)}
+      </div>
+    </div>
+  )
+}
+
+type HobbyProjProps = {
+  project: HobbyProj,
+}
+
+const HobProj: FC<HobbyProjProps> = ({ project }): JSX.Element => {
+  return (
+    <div className="h-proj-wrapper">
+      <div className="proj-text text">
+        <h5 className="title">{project.name}</h5>
+        <p className="description">{project.description}</p>
+      </div>
+      <div className="project-slider">
+        <Slider images={project.images} directory={project.directory} small={true} />
+      </div>
     </div >
   )
 }

@@ -1,6 +1,6 @@
 import React, { FC } from "react";
 
-import { ExpInter, Skill, EduInter } from "../types"
+import { ExpInter, EduInter } from "../types"
 import { skillsList, expList, eduList } from "../info"
 
 import "../scss/resume.scss"
@@ -8,8 +8,7 @@ import "../scss/resume.scss"
 const Resume: FC = () => {
   return (
     <div className="resume-wrapper">
-      <h2 className="under-construction">Under construction. Please check back soon!</h2>
-      {/* <div className="left">
+      <div className="left">
         <Skills />
       </div>
       <div className="right">
@@ -24,7 +23,7 @@ const Resume: FC = () => {
           {eduList.map(edu =>
             <Education edu={edu} />)}
         </section>
-      </div> */}
+      </div>
     </div>
   )
 }
@@ -63,15 +62,13 @@ const Skills: FC = (): JSX.Element => {
   return <div className="skills-wrapper">
     <h3 className="skills-heading">Skills</h3>
     <ul className="main-list">
-      {skillsList.map((skill: Skill, index: number) =>
-        <li className="main-item" key={`skill-${index}`}>{skill.main}
-          <ul className="sub-list">
-            {skill.sub.length > 0 ? skill.sub.map((sub, i) =>
-              <li className="sub-item" key={`skill-${skill} ${i}`}>{sub}</li>) : ""}
-          </ul>
-        </li>
+      {skillsList.map((skill: string, index: number) =>
+        <li className="skill" key={`skill-${index}`}>{skill}</li>
       )}
     </ul>
+
+    <h4 className="lang-heading">Languages</h4>
+    <p className="lang">Russian</p>  
   </div>
 }
 

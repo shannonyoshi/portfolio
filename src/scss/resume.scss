@@ -1,46 +1,71 @@
 @import "variables";
 
 .resume-wrapper {
-  display:flex;
-  //TODO: remove this after resume updated
-  justify-content: center;
-  min-height:70vh;
-  .under-construction{
-    padding:2em;
+  max-width: 850px;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  min-height: 70vh;
 
+  @include tablet {
+    flex-direction: column;
   }
 
   .skills-wrapper {
-    padding: 3%;
-    width: auto;
-    border: 1px solid red;
-    margin-left:2em;
-
-    .skills-heading{
-      color:color(heading-l)
-    }
-    ul {
-      list-style-type: none;
-    }
-    .main-item {
-      margin-top: 5px;
-      color:color(grey);
-      @include small-text;
-      font-weight: 550;
-    }
-    .sub-list {
-      text-indent: 1em;
-      font-weight:400;
+    @include tablet {
+      @include page-width;
     }
   }
-  .exp-wrapper{
-
-    @include page-width;
-
-    .exp-item{
-      list-style-type: disc;
-      display: list-item;
-      margin-left:1em;
+  .skills-heading {
+    color: color(med-blue);
+    padding-bottom:.5em;
+  }
+  ul {
+    list-style-type: none;
+    margin-left: 1rem;
+    @include tablet {
+      @include page-width;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      margin-left:.5rem;
     }
+  }
+  .skill {
+    color: color(grey);
+    font-weight: 550;
+    @include small-text;
+    padding-right:.5em;
+  }
+  .lang-heading{
+    padding-bottom:.5em;
+  }
+  .lang {
+    text-indent: 15px;
+    font-weight: 550;
+  }
+  .right {
+    @include page-width;
+    max-width: 700px;
+    margin-right: 0px;
+    @include tablet {
+      margin: auto;
+    }
+  }
+  section {
+    margin-bottom: 1rem;
+  }
+  .exp-wrapper,
+  .edu-wrapper {
+    margin: 1rem;
+  }
+  .exp-text {
+    font-weight: 550;
+  }
+  .exp-item {
+    list-style-type: disc;
+    display: list-item;
+    margin-left: 1rem;
   }
 }

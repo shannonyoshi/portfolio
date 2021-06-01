@@ -1,6 +1,7 @@
 @import "variables";
 
 .slider-wrapper {
+  height:auto;
   // margin-bottom: 2em;
   // margin:0 auto 2em auto;
   text-align: center;
@@ -24,10 +25,14 @@
     outline: none;
     border: none;
     background-color: transparent;
-    color: color(heading-l);
+    color: color(med-blue);
     .icon-btn {
       height: 3em;
       width: 3em;
+      @include small-screen{
+        height:2em;
+        width:2em;
+      }
     }
   }
   .dots {
@@ -40,13 +45,21 @@
 
     margin: 0.5em;
     border-radius: 50%;
-    background-color: color(sub-heading);
+    background-color: color(light-blue);
     cursor: grab;
+    @include small-screen {
+      height:.6em;
+      width:.6em
+    }
   }
   .selected {
     height: 1em;
     width: 1em;
-    background-color: color(heading-l);
+    background-color: color(med-blue);
+    @include small-screen{
+      height:.75em;
+      width:.75em;
+    }
   }
 
   .slider-img {
