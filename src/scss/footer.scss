@@ -1,26 +1,44 @@
 @import "variables";
 
-footer{
-  position:relative;
+footer {
+  position: relative;
+  text-align: center;
+  width: 100%;
+  max-height: 310px;
+
+  img {
+    transform: scaleY(-1);
+    object-fit: cover;
+    object-position: center top;
+    width: 100%;
+    max-height: 210px;
+    opacity: 0.7;
+  }
   .contact {
-    position:absolute;
+    position: absolute;
     top: 50px;
-    left:0;
-    right:0;
+    left: 0;
+    right: 0;
     margin-left: auto;
     margin-right: auto;
-  }
-  .contact-icon{
-    font-size: 32px;
-    padding:2px;
-    text-decoration:none;
-    color: color(light-blue);
-    @include raise;
-    &:hover{
-      color:color(med-blue);
+    @include phone{
+      top:25px;
     }
   }
-  .at-icon{
-    font-size:12px;
+  .contact-icon {
+    font-size: 32px;
+    padding: 2px;
+    text-decoration: none;
+    color: color(med-blue);
+    @include raise;
+    &:hover {
+      color: color(light-blue);
+    }
+  }
+  .at-icon {
+    font-size: 12px;
+  }
+  p{
+    font-weight: bold;
   }
 }

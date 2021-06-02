@@ -8,22 +8,6 @@
   .hobby-wrapper {
     padding-top:1em;
   }
-  .text {
-    @include page-width;
-
-    p,
-    h5 {
-      width: 100%;
-      max-width: 700px;
-      margin: auto;
-    }
-    h5, h3 {
-      text-align: center;
-    }
-    p {
-      padding:10px 0;
-    }
-  }
   .h-projects{
     display:grid;
     grid-template-columns: 1fr 1fr;
@@ -39,13 +23,15 @@
     display:flex;
     flex-direction: column;
     justify-content: space-between;
-
+    
     @include small-screen {
       display:block;
+      min-width: 100%;
     }
     .proj-text {
       margin-top:0;
       margin-bottom:auto;
+      max-width:96vw;
       
       p,
       h5 {
@@ -60,18 +46,34 @@
     }
     .title{
       padding-top:1em;
-
+      
     }
   }
   .project-slider{
     // height:auto;
     padding-bottom:1em;
   }
-
+  
   .info{
     padding: 1em 0;
     @include small-screen {
       padding: 0.5em 0;
+    }
+  }
+  .text {
+    @include page-width;
+
+    p,
+    h5 {
+      width: 100%;
+      max-width: 700px;
+      margin: auto;
+    }
+    h5, h3 {
+      text-align: center;
+    }
+    p {
+      padding:10px 0;
     }
   }
 }

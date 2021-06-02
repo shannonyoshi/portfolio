@@ -36,7 +36,16 @@ export const expList: ExpInter[] = [{
   text: "Managed a commercial building with 100-140 employees. Originally hired as a contractor, then transitioned into full-time employment",
   bullets: ["Contrived projects to maximize improvements while maintaining costs", "Improved and ran a building with 100-140 employees by increasing amenities; coordinating vendors, inventory, and ordering of supplies; creating a storage system; and processing invoices", "Worked to improve employee and client experiences by encouraging and planning interagency social events"],
 }, {
-  id: 2,
+  id:2,
+  role: "Contract Administrator",
+  company: "Various Companies",
+  location:"San Francisco",
+  time: "September 2016 - November 2017",
+  text: "Held administrative roles at financial firms",
+  bullets:["Managed logistics including flights, hotels, and expense reports for business trips for two Vice Presidents and a Managing Director", "Ordered daily catering, organized meetings and building access"]
+
+},{
+  id: 3,
   role: "Sourcer",
   company: "T3 Intelligence",
   location: "San Francisco",

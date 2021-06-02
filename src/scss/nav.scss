@@ -12,10 +12,12 @@ nav {
     border-bottom:4px double transparent;
     outline: none;
     color: color(light-grey);
-    font-size: 1.5em;
-    // font-weight: bold;
     margin: 0.5em;
+    font-size: 1.5em;
     @include raise;
+    @include phone {
+      font-size:1.15em;
+    }
 
     &:hover {
       border-bottom: 4px double color(light-grey);
