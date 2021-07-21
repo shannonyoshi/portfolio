@@ -22,7 +22,7 @@ export const projList: ProjInter[] = [{
   description: "Migrated Wordpress site to Netlify CMS.",
   stack: ["Hugo", "React", "Netlify"],
   url: "https://www.traininginthe21stcentury.com/",
-  github: "https://github.com/shannonyoshi/match-game",
+  github: "https://github.com/shannonyoshi/netlify-hugo-cms",
   images: [{ src: "t21c-home.png", alt: "T21C Homepage" }, { src: "t21c-home-lower.png", alt: "T21C Homepage:Why use blended learning?" }, { src: "t21c-services.png", alt: "T21C Services Page" }]
 },
 ]
