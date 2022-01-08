@@ -21,7 +21,7 @@ const App: FC = (): JSX.Element => {
         <a href="https://github.com/shannonyoshi/" target="_blank"><i className="fab fa-github" /></a>
         <a href="https://www.linkedin.com/in/shannon-yoshi/"><i className="fab fa-linkedin" /></a>
       </div>
-      <Header imageBG="seattle(eric-zhang)crop.jpg" altBG="Seattle Skyline" imageMe="../assets/ProfessionalPortrait.JPG" blurb="Hello!" />
+      <Header imageBG="seattle(eric-zhang)crop.jpg" altBG="Seattle Skyline" imageMe="../assets/professionalportrait(400px).jpg" blurb="Hello!" />
       <section className="page">
         <Navigation setPage={setPage} page={page} />
         {page === "portfolio" ?

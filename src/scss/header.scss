@@ -40,13 +40,13 @@ header {
     float: left;
     background-color: color(white);
     border-radius: 50%;
-    // width: 15vw;
-    height: auto;
     padding: 5px;
     border: 2px solid color(medium);
     width: 200px;
+    height:200px;
     @include tablet {
       width:150px;
+      height:150px;
     }
   }
   .header-text {

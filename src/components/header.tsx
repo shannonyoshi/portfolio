@@ -13,7 +13,7 @@ const Header: FC<HeaderProps> = ({ imageBG, altBG, imageMe, blurb }): JSX.Elemen
   return (
     <header>
       <div className="bg-container">
-        <img src={`/assets/${imageBG}`} alt={altBG} className="bg" />
+        <img src={`/assets/${imageBG}`} alt={altBG} className="bg"/>
       </div>
       <div className="portrait-info-container">
 
