@@ -2,18 +2,21 @@ import React, { FC } from "react";
 import "../scss/header.scss";
 
 interface HeaderProps {
-  imageBG: string,
-  altBG: string,
+
   imageMe: string,
   blurb: string,
 }
 
-const Header: FC<HeaderProps> = ({ imageBG, altBG, imageMe, blurb }): JSX.Element => {
+const Header: FC<HeaderProps> = ({ imageMe }): JSX.Element => {
 
   return (
     <header>
       <div className="bg-container">
-        <img src={`/assets/${imageBG}`} alt={altBG} className="bg"/>
+        <img
+          srcSet="/assets/seattle(eric-zhang)crop-480w.jpg 480w, /assets/seattle(eric-zhang)crop-768w.jpg 768w, /assets/seattle(eric-zhang)crop-1024w.jpg 1024w, /assets/seattle(eric-zhang)crop-3000w.jpg 3000w"
+          sizes="(max-width: 480px) 480px,5472px"
+          src={`/assets/seattle(eric-zhang)crop.jpg`}
+          alt="Seattle Space Needle" className="bg" />
       </div>
       <div className="portrait-info-container">
 
