@@ -11,7 +11,14 @@ export interface ProjInter {
 export interface Image {
   src: string,
   alt: string
+  srcset?: string[]| null,
 }
+
+// export interface ImageLarge {
+//   srcset: string,
+//   src: string,
+//   alt: string
+// }
 
 export interface ExpInter {
   id: number,

@@ -7,7 +7,7 @@ export const projList: ProjInter[] = [{
   stack: ["React", "Golang", "PostgreSQL"],
   url: "https://bakingunits.com/",
   github: "https://github.com/shannonyoshi/unit-conversion",
-  images: [{ src: "baking-units.png", alt: "Baking Units Homepage" }, { src: "baking-units-volume-chart.png", alt: "Baking Units Volume Chart" }, { src: "baking-units-custom-chart.png", alt: "Baking Units custom unit chart" }, { src: "baking-units-suggestion-form.png", alt: "Baking Units Suggestion Form" }]
+  images: [{ srcset: ["baking-units-480w.jpg", "baking-units-768w.jpg", "baking-units-1024w.jpg", "baking-units-1280w.jpg", "baking-units-3168w.jpg"], src: "baking-units-1024w.jpg", alt: "Baking Units Homepage" }, { srcset: ["",],  src: "baking-units-volume-chart.png", alt: "Baking Units Volume Chart" }, {srcset: ["",],   src: "baking-units-custom-chart.png", alt: "Baking Units custom unit chart" }, { srcset: ["",],  src: "baking-units-suggestion-form.png", alt: "Baking Units Suggestion Form" }]
 }, {
   id: 2,
   name: "Match-Game",
@@ -15,7 +15,7 @@ export const projList: ProjInter[] = [{
   stack: ["React", "TypeScript"],
   url: "https://match-game.syoshi.dev/",
   github: "https://github.com/shannonyoshi/match-game",
-  images: [{ src: "match-game-instructions-default.png", alt: "Instructions Default Mode" }, { src: "match-game-hint.png", alt: "Match Game Hint Default Mode" }, { src: "match-game-error-dark.png", alt: "Match Game Error Dark Mode" }, { src: "match-game-mono-matches.png", alt: "Match Game Matches Mono Mode" }, { src: "match-game-mono-dark.png", alt: "Match Game Instructions Mono-Dark Mode" },]
+  images: [{ srcset: ["",],   src: "match-game-instructions-default.png", alt: "Instructions Default Mode" }, { srcset: ["",],  src: "match-game-hint.png", alt: "Match Game Hint Default Mode" }, { srcset: ["",],  src: "match-game-error-dark.png", alt: "Match Game Error Dark Mode" }, { srcset: ["",],  src: "match-game-mono-matches.png", alt: "Match Game Matches Mono Mode" }, { srcset: ["",],  src: "match-game-mono-dark.png", alt: "Match Game Instructions Mono-Dark Mode" },]
 }, {
   id: 3,
   name: "Training in the 21st Century Website",
@@ -23,7 +23,7 @@ export const projList: ProjInter[] = [{
   stack: ["Hugo", "React", "Netlify"],
   url: "https://www.traininginthe21stcentury.com/",
   github: "https://github.com/shannonyoshi/netlify-hugo-cms",
-  images: [{ src: "t21c-home.png", alt: "T21C Homepage" }, { src: "t21c-home-lower.png", alt: "T21C Homepage:Why use blended learning?" }, { src: "t21c-services.png", alt: "T21C Services Page" }]
+  images: [{ srcset: ["",],   src: "t21c-home.png", alt: "T21C Homepage" }, { srcset: ["",],  src: "t21c-home-lower.png", alt: "T21C Homepage:Why use blended learning?" }, { srcset: ["",],  src: "t21c-services.png", alt: "T21C Services Page" }]
 },
 ]
 
