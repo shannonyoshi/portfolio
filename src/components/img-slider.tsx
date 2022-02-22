@@ -9,26 +9,47 @@ interface SliderProps {
   small?: boolean,
 }
 
-function prepSrcSet(srcset: string[], path: string): string | null {
+interface imageSrc {
+  sources: string,
+  medias: string
+}
+
+function prepSrcSet(srcset: string[], path: string): imageSrc | null {
+  console.log("in prepSrcSet")
+  console.log(`srcset`, srcset)
   if (srcset[0].length === 0) {
-    return ""
+    console.log(`returning null`)
+    return null
   }
   let width = ""
-  let ret: string = ``
-  srcset.forEach(source => {
+  let ret: imageSrc = { sources: "", medias: "" }
+
+  srcset.forEach((source, i, srcset) => {
     let theSplit = source.split("-").pop()
-    if (theSplit != undefined) {
+    if (theSplit !== undefined) {
       width = theSplit.split(".")[0]
+      console.log(`width`, width)
     }
-    ret.concat(`${path}${source} ${width}, `)
-  }) 
-  return ret.length > 0 ? ret : null
+    if (i === srcset.length - 1) {
+      console.log(`last source`, source)
+      ret.sources = ret.sources.concat(`${path}${source} ${width}`)
+      ret.medias = ret.medias.concat(`${width}`)
+
+    } else {
+      console.log(`inside else`)
+      ret.sources = ret.sources.concat(`${path}${source} ${width}, `)
+      ret.medias = ret.medias.concat(`(max-width: ${width}) ${width}, `)
+      console.log(`ret(added 1)`, ret["sources"])
+    }
+  })
+  console.log(`ret`, ret)
+  return ret.sources.length > 0 ? ret : null
 }
 
 const Slider: FC<SliderProps> = ({ images, directory = null, small = false }): JSX.Element => {
   const [index, setIndex] = useState<number>(0)
-  console.log("directory: ", directory)
-  console.log('src: ', `/assets/${directory ? `${directory}/` : ``}${images[index].src}`)
+  // console.log("directory: ", directory)
+  // consol e.log('src: ', `/assets/${directory ? `${directory}/` : ``}${images[index].src}`)
   const goLeft = (): void => {
     if (index === 0) {
       setIndex(images.length - 1)
@@ -45,17 +66,19 @@ const Slider: FC<SliderProps> = ({ images, directory = null, small = false }): J
     }
   }
   let path: string = `/assets/${directory ? `${directory}/` : ``}`
-  let sourceSet = null
+  let imgInfo: imageSrc | null = null
   let source: string = `${path}${images[index].src}`
   if (Array.isArray(images[index].srcset)) {
-    sourceSet = prepSrcSet(images[index].srcset as string[], path)
+    imgInfo = prepSrcSet(images[index].srcset as string[], path)
+    console.log(`imgInfo`, imgInfo)
   }
 
   return (
     <div className="slider-wrapper">
       <img className={`slider-img${small ? "-small" : ""}`}
-        {...sourceSet ? `srcSet=${sourceSet}` : ""}
-
+        // {imgInfo!==null ? `srcSet=${imgInfo.sources} sizes=${imgInfo.medias}` : ""}
+        srcSet={imgInfo !== null ? `${imgInfo.sources}` : ""}
+        sizes={imgInfo !== null ? `${imgInfo.medias}` : ""}
         src={`${source}`}
         alt={`${images[index].alt}`} />
       <div className={`btns-wrapper${small ? "-small" : ""}`}>
