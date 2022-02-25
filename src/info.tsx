@@ -7,7 +7,11 @@ export const projList: ProjInter[] = [{
   stack: ["React", "Golang", "PostgreSQL"],
   url: "https://bakingunits.com/",
   github: "https://github.com/shannonyoshi/unit-conversion",
-  images: [{ srcset: ["baking-units-480w.jpg", "baking-units-768w.jpg", "baking-units-1024w.jpg", "baking-units-1280w.jpg", "baking-units-3168w.jpg"], src: "baking-units-1024w.jpg", alt: "Baking Units Homepage" }, { srcset: ["",],  src: "baking-units-volume-chart.png", alt: "Baking Units Volume Chart" }, {srcset: ["",],   src: "baking-units-custom-chart.png", alt: "Baking Units custom unit chart" }, { srcset: ["",],  src: "baking-units-suggestion-form.png", alt: "Baking Units Suggestion Form" }]
+  images: [
+    { srcset: ["baking-units-768w.jpg", "baking-units-1280w.jpg", "baking-units-3168w.jpg"], src: "baking-units-3168w.jpg", alt: "Baking Units Homepage" },
+    { srcset: ["baking-units-volume-chart-768w.jpg", "baking-units-volume-chart-1280w.jpg", "baking-units-volume-chart-3168w.jpg"], src: "baking-units-volume-chart-3168w.jpg", alt: "Baking Units Volume Chart" },
+    { srcset: ["baking-units-custom-chart-768w.jpg", "baking-units-custom-chart-1280w.jpg", "baking-units-custom-chart-3168w.jpg"], src: "baking-units-custom-chart-3168w.jpg", alt: "Baking Units custom unit chart" },
+    { srcset: ["baking-units-suggestion-form-768w.jpg", "baking-units-suggestion-form-1280w.jpg", "baking-units-suggestion-form-3168w.jpg"], src: "baking-units-suggestion-form-3168w.jpg", alt: "Baking Units Suggestion Form" }]
 }, {
   id: 2,
   name: "Match-Game",
@@ -15,7 +19,12 @@ export const projList: ProjInter[] = [{
   stack: ["React", "TypeScript"],
   url: "https://match-game.syoshi.dev/",
   github: "https://github.com/shannonyoshi/match-game",
-  images: [{ srcset: ["",],   src: "match-game-instructions-default.png", alt: "Instructions Default Mode" }, { srcset: ["",],  src: "match-game-hint.png", alt: "Match Game Hint Default Mode" }, { srcset: ["",],  src: "match-game-error-dark.png", alt: "Match Game Error Dark Mode" }, { srcset: ["",],  src: "match-game-mono-matches.png", alt: "Match Game Matches Mono Mode" }, { srcset: ["",],  src: "match-game-mono-dark.png", alt: "Match Game Instructions Mono-Dark Mode" },]
+  images: [
+    { srcset: ["match-game-instructions-768w.jpg", "match-game-instructions-1280w.jpg", "match-game-instructions-3168w.jpg"], src: "match-game-instructions-3168w.jpg", alt: "Instructions Default Mode" },
+    { srcset: ["match-game-hint-768w.jpg", "match-game-hint-1280w.jpg", "match-game-hint-3168w.jpg"], src: "match-game-hint-3168w.jpg", alt: "Match Game Hint Default Mode" },
+    { srcset: ["match-game-error-dark-768w.jpg", "match-game-error-dark-1280w.jpg", "match-game-error-dark-3168w.jpg"], src: "match-game-error-dark-3168w.jpg", alt: "Match Game Error Dark Mode" },
+    { srcset: ["match-game-mono-matches-768w.jpg", "match-game-mono-matches-1280w.jpg", "match-game-mono-matches-3168w.jpg"], src: "match-game-mono-matches-3168w.jpg", alt: "Match Game Matches Mono Mode" },
+    { srcset: ["match-game-mono-dark-768w.jpg", "match-game-mono-dark-1280w.jpg", "match-game-mono-dark-3168w.jpg"], src: "match-game-mono-dark-3168w.jpg", alt: "Match Game Instructions Mono-Dark Mode" },]
 }, {
   id: 3,
   name: "Training in the 21st Century Website",
@@ -23,7 +32,10 @@ export const projList: ProjInter[] = [{
   stack: ["Hugo", "React", "Netlify"],
   url: "https://www.traininginthe21stcentury.com/",
   github: "https://github.com/shannonyoshi/netlify-hugo-cms",
-  images: [{ srcset: ["",],   src: "t21c-home.png", alt: "T21C Homepage" }, { srcset: ["",],  src: "t21c-home-lower.png", alt: "T21C Homepage:Why use blended learning?" }, { srcset: ["",],  src: "t21c-services.png", alt: "T21C Services Page" }]
+  images: [
+    { srcset: ["t21c-home-768w.jpg", "t21c-home-1280w.jpg", "t21c-home-3168w.jpg"], src: "t21c-home-3168w.jpg", alt: "T21C Homepage" },
+    { srcset: ["t21c-home-lower-768w.jpg", "t21c-home-lower-1280w.jpg", "t21c-home-lower-3168w.jpg"], src: "t21c-home-lower-3168w.jpg", alt: "T21C Homepage:Why use blended learning?" },
+    { srcset: ["t21c-services-768w.jpg", "t21c-services-1280w.jpg", "t21c-services-3168w.jpg"], src: "t21c-services-3168w.jpg", alt: "T21C Services Page" }]
 },
 ]
 
@@ -36,15 +48,15 @@ export const expList: ExpInter[] = [{
   text: "Managed a commercial building with 100-140 employees. Originally hired as a contractor, then transitioned into full-time employment",
   bullets: ["Contrived projects to maximize improvements while maintaining costs", "Improved and ran a building with 100-140 employees by increasing amenities; coordinating vendors, inventory, and ordering of supplies; creating a storage system; and processing invoices", "Worked to improve employee and client experiences by encouraging and planning interagency social events"],
 }, {
-  id:2,
+  id: 2,
   role: "Contract Administrator",
   company: "Various Companies",
-  location:"San Francisco",
+  location: "San Francisco",
   time: "September 2016 - November 2017",
   text: "Held administrative roles at financial firms",
-  bullets:["Managed logistics including flights, hotels, and expense reports for business trips for two Vice Presidents and a Managing Director", "Ordered daily catering, organized meetings and building access"]
+  bullets: ["Managed logistics including flights, hotels, and expense reports for business trips for two Vice Presidents and a Managing Director", "Ordered daily catering, organized meetings and building access"]
 
-},{
+}, {
   id: 3,
   role: "Sourcer",
   company: "T3 Intelligence",

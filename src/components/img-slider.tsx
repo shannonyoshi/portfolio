@@ -15,10 +15,7 @@ interface imageSrc {
 }
 
 function prepSrcSet(srcset: string[], path: string): imageSrc | null {
-  console.log("in prepSrcSet")
-  console.log(`srcset`, srcset)
   if (srcset[0].length === 0) {
-    console.log(`returning null`)
     return null
   }
   let width = ""
@@ -28,28 +25,21 @@ function prepSrcSet(srcset: string[], path: string): imageSrc | null {
     let theSplit = source.split("-").pop()
     if (theSplit !== undefined) {
       width = theSplit.split(".")[0]
-      console.log(`width`, width)
     }
     if (i === srcset.length - 1) {
-      console.log(`last source`, source)
       ret.sources = ret.sources.concat(`${path}${source} ${width}`)
       ret.medias = ret.medias.concat(`${width}`)
 
     } else {
-      console.log(`inside else`)
       ret.sources = ret.sources.concat(`${path}${source} ${width}, `)
       ret.medias = ret.medias.concat(`(max-width: ${width}) ${width}, `)
-      console.log(`ret(added 1)`, ret["sources"])
     }
   })
-  console.log(`ret`, ret)
   return ret.sources.length > 0 ? ret : null
 }
 
 const Slider: FC<SliderProps> = ({ images, directory = null, small = false }): JSX.Element => {
   const [index, setIndex] = useState<number>(0)
-  // console.log("directory: ", directory)
-  // consol e.log('src: ', `/assets/${directory ? `${directory}/` : ``}${images[index].src}`)
   const goLeft = (): void => {
     if (index === 0) {
       setIndex(images.length - 1)
@@ -92,7 +82,6 @@ const Slider: FC<SliderProps> = ({ images, directory = null, small = false }): J
     </div>
   )
 }
-
 
 export default Slider;
 
