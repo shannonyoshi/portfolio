@@ -18,8 +18,8 @@ const App: FC = (): JSX.Element => {
       <div className="contact-header">
         <h3>Contact</h3>
         <p>shannon.yoshikawa<span><i className="fas fa-at" /></span>gmail.com</p>
-        <a href="https://github.com/shannonyoshi/" target="_blank"><i className="fab fa-github" /></a>
-        <a href="https://www.linkedin.com/in/shannon-yoshi/"><i className="fab fa-linkedin" /></a>
+        <a href="https://github.com/shannonyoshi/" target="_blank" rel="noreferrer"><i className="fab fa-github" /></a>
+        <a href="https://www.linkedin.com/in/shannon-yoshi/" target="_blank" rel="noreferrer"><i className="fab fa-linkedin" /></a>
       </div>
       <Header imageMe="../assets/professionalportrait(400px).jpg" blurb="Hello!" />
       <section className="page">
